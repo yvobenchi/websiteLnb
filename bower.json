@@ -1,9 +1,0 @@
-{
-  "name": "website",
-  "private": true,
-  "dependencies": {
-    "jquery": "~1.11.0",
-    "stickyNavbar.js": "~1.1.1"
-  },
-  "devDependencies": {}
-}
