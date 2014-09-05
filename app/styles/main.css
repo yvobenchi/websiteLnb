@@ -1,1 +1,69 @@
 
+*{ margin: 0; padding: 0;}
+            
+body{
+    //overflow: hidden;
+    color:#fff;
+    font-size: 24px;
+    font-family: arial;
+    text-align: center;
+}
+
+.container{
+    
+}
+
+#nav{
+    width: 860px; 
+    line-height: 48px; 
+    height: 48px; 
+    border-radius: 6px;
+    background: black; 
+    font-size: 14px; 
+    position: fixed;
+    top: 30px;
+    
+}
+            
+            
+#section1{ 
+    line-height: 600px; 
+    background: url("../images/golf-background2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%; 
+    float: left;  
+    overflow: auto;
+}
+
+#section2{ 
+    line-height: 600px; 
+    background: #a4a8ab; 
+    width: 100%; 
+    float: left; 
+    overflow: auto;
+}
+
+#section3{ 
+    line-height: 600px; 
+    background: #38383a; 
+    width: 100%; 
+    float: left;  
+    overflow: auto;
+}
+
+#section4{ 
+    line-height: 600px; 
+    background: red; 
+    width: 100%; 
+    float: left;  
+    overflow: auto;
+}
+
+.navBarUl li{
+    float: left;
+    list-style-type: none;
+}
+
+.navBarUl li a{
+    text-decoration: none;
+}
