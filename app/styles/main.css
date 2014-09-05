@@ -1,89 +1,106 @@
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
 
-/* Space out content a bit */
-body {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-}
-
-/* Custom page footer */
-.footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-    margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
+*{ margin: 0; padding: 0;}
+            
+body{
+    //overflow: hidden;
+    color:#fff;
+    font-size: 24px;
+    font-family: arial;
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
 }
 
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-}
-
-.marketing p + h4 {
-    margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
-
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
+.container{
     
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
+}
+
+#nav{
+    width: 60%; 
+    line-height: 48px; 
+    height: 48px; 
+    border-radius: 6px;
+    background-image: linear-gradient(#ffffff 0% ,#3f3f3f 100%);
+    box-shadow: 0px 1px 1px #646464;
+    font-size: 14px; 
+    position: fixed;
+    top: 30px;
+    margin-left: 20%;
+}
+            
+            
+#section1{ 
+    line-height: 600px; 
+    background: url("../images/golf-background2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%; 
+    float: left;  
+    overflow: auto;
+}
+
+#section2{ 
+    line-height: 600px; 
+    background: #a4a8ab; 
+    width: 100%; 
+    float: left; 
+    overflow: auto;
+}
+
+#section3{ 
+    line-height: 600px; 
+    background: #38383a; 
+    width: 100%; 
+    float: left;  
+    overflow: auto;
+}
+
+#section4{ 
+    line-height: 600px; 
+    background: red; 
+    width: 100%; 
+    float: left;  
+    overflow: auto;
+}
+
+.navBarUl{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    
+}
+
+.navBarUl li{
+    display: table-cell;
+    width: auto;
+    overflow: hidden;
+    list-style-type: none;
+    transition: all 0.5s ease;
+}
+
+.navBarUl li:hover{
+    background: #b1b1b1;
+}
+
+.navBarUl li:hover:first-child{
+    border-bottom-left-radius: 6px;  
+    border-top-left-radius: 6px;  
+}
+
+.navBarUl li:hover:last-child{
+    border-bottom-right-radius: 6px;  
+    border-top-right-radius: 6px;  
+}
+
+.navBarUl li:not(:first-child){
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #c1c1c1 ;
+}
+
+.navBarUl li a{
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+.navBarUl li a div{
+    width: 100%;
+    height: 100%;
 }
