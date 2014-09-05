@@ -33,7 +33,7 @@
                 var topvalue = win.scrollTop();
                 if(wh<=topvalue)
                 {
-                    $(elem).css({"position":"fixed","top":"0px"});
+                    $(elem).css({"position":"fixed","top":"2px"});
                 }
                 else{
                     $(elem).css({"position":"absolute","top":wh+"px"});
