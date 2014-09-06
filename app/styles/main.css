@@ -60,7 +60,7 @@ body{
 }
 
 .footer { 
-    height: 300px; 
+    height: auto; 
     background: #f1f1f1;
     width: 100%; 
     float: left;  
@@ -71,6 +71,28 @@ body{
     width: 20%;
     min-width: 50px;
     margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.logo img{
+    width: 50%;
+}
+
+.credit{
+    margin-bottom: 60px;
+}
+
+.credit p,a{
+    color: #333333;
+    font-size: 17px;
+    font-family: Exo;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+.credit a:hover{
+    color: #777777;
 }
 
 .navBarUl{
