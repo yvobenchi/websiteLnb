@@ -48,7 +48,7 @@ body{
     background: #38383a; 
     width: 100%; 
     float: left;  
-    overflow: auto;
+    overflow: hidden;
     height: 680px;
 }
 
@@ -106,7 +106,7 @@ body{
 }
 .team-content{
     width: 90%;
-    min-width: 800px;
+    min-width: 1000px;
     margin: auto;
 }
 .team-content h1{
@@ -146,11 +146,11 @@ body{
     margin-bottom: 10px;
 }
 .name h2{
-    font-size: 22px;
+    font-size: 17px;
 }
 .photo{
-        border: 3px solid #f1f1f1;
-        margin-bottom: 10px;
+    border: 3px solid #f1f1f1;
+    margin-bottom: 10px;
 }
 .photo img{
     height: 250px;
