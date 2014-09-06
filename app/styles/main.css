@@ -45,11 +45,11 @@ body{
 }
 
 #section3{ 
-    line-height: 600px; 
     background: #38383a; 
     width: 100%; 
     float: left;  
     overflow: auto;
+    height: 680px;
 }
 
 #section4{ 
@@ -103,4 +103,62 @@ body{
 .navBarUl li a div{
     width: 100%;
     height: 100%;
+}
+.team-content{
+    width: 90%;
+    min-width: 800px;
+    margin: auto;
+}
+.team-content h1{
+    color: white;
+    text-align: left;
+    padding-left: 96px;
+    line-height: 200px;
+}
+.team{
+    width: 100%;
+}
+.profil1{
+    margin-left: 4%;
+    float: left;
+    width: 20%;
+    height: 300px;
+}
+.profil2{
+    margin-left: 4%;
+    float: left;
+    width: 20%;
+    height: 300px;
+}
+.profil3{
+    margin-left: 4%;
+    float: left;
+    width: 20%;
+    height: 300px;
+}
+.profil4{
+    margin-left: 4%;
+    float: left;
+    width: 20%;
+    height: 300px;
+}
+.name{
+    margin-bottom: 10px;
+}
+.name h2{
+    font-size: 22px;
+}
+.photo{
+        border: 3px solid #f1f1f1;
+        margin-bottom: 10px;
+}
+.photo img{
+    height: 250px;
+}
+.description{
+
+}
+.description p{
+    font-size: 14px;
+    text-align: justify;
 }
