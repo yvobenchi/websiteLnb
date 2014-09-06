@@ -1,4 +1,3 @@
-
 *{ margin: 0; padding: 0;}
             
 body{
@@ -45,19 +44,55 @@ body{
 }
 
 #section3{ 
-    line-height: 600px; 
     background: #38383a; 
     width: 100%; 
     float: left;  
-    overflow: auto;
+    overflow: hidden;
+    height: 680px;
 }
 
 #section4{ 
-    line-height: 600px; 
-    background: red; 
+    background: #999999; 
     width: 100%; 
     float: left;  
     overflow: auto;
+    min-width: 1000px;
+}
+
+.footer { 
+    height: auto; 
+    background: #f1f1f1;
+    width: 100%; 
+    float: left;  
+    overflow: hidden;
+}
+
+.logo {
+    width: 20%;
+    min-width: 50px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.logo img{
+    width: 50%;
+}
+
+.credit{
+    margin-bottom: 60px;
+}
+
+.credit p,a{
+    color: #333333;
+    font-size: 17px;
+    font-family: Exo;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+.credit a:hover{
+    color: #777777;
 }
 
 .navBarUl{
@@ -103,4 +138,99 @@ body{
 .navBarUl li a div{
     width: 100%;
     height: 100%;
+}
+.team-content{
+    width: 90%;
+    min-width: 1000px;
+    margin: auto;
+}
+.team-content h1{
+    color: white;
+    text-align: left;
+    padding-left: 96px;
+    line-height: 200px;
+    font-family: Exo;
+    text-shadow: 0px 2px 2px black;
+}
+.team-content .team{
+    width: 100%;
+}
+
+.team-content .team .profil{
+    margin-left: 4%;
+    float: left;
+    width: 20%;
+    height: 300px;
+}
+
+.name{
+    margin-bottom: 10px;
+}
+
+.name h2{
+    font-size: 17px;
+    font-family: Exo;
+}
+
+.photo{
+    border: 3px solid #f1f1f1;
+    margin-bottom: 10px;
+}
+
+.photo img{
+    height: 250px;
+}
+
+.description{
+
+}
+
+.description p{
+    font-size: 14px;
+    text-align: justify;
+    font-family: Exo;
+}
+
+#section4 h1{
+    font-family: Exo;
+    line-height: 164px;
+    color: rgb(230, 230, 230);
+    text-shadow: 0px 2px 2px black;
+}
+.contact-text{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    color: #222222;
+}
+
+.contact-text p{
+    font-family: Exo;
+}
+
+.contact-link {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: #222222;
+    line-height: 40px;
+}
+
+.contact-link a{
+    color: #222222;
+    font-family: Exo;
+    font-size: 20px;
+}
+
+.contact-link a:hover{
+    color: #777777;
+    font-family: Exo;
+    font-size: 20px;
+}
+
+.contact-link p{
+    color: #222222;
+    font-family: Exo;
+    font-size: 20px;
+    font-style: italic;
 }
