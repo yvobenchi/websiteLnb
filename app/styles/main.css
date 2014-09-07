@@ -36,11 +36,128 @@ body{
 }
 
 #section2{ 
-    line-height: 600px; 
+    line-height: 30px; 
     background: #a4a8ab; 
     width: 100%; 
     float: left; 
     overflow: auto;
+}
+
+#section2 h1{
+    color: white;
+    text-align: right;
+    padding-right: 96px;
+    line-height: 200px;
+    font-family: Exo;
+    text-shadow: 0px 2px 2px black;
+}
+
+.bloc1{
+    height: auto; 
+    width: 80%; 
+    float: left;
+    margin-left: 10%;
+    margin-right: 10%;  
+    overflow: hidden;
+}
+
+.bloc1-txt {
+    color: white;
+    width: 40%;
+    text-align: justify;
+    font-family: Exo;
+    font-size: 17px;
+    float: left;  
+}
+
+.bloc1-img {
+    float: left;
+    width: 40%;
+}
+
+.bloc2 {
+    height: auto;
+    margin-top: 100px; 
+    width: 100%; 
+    float: left;  
+    overflow: hidden;
+    min-width: 1000px;
+}
+
+.picto1 {
+    height: auto; 
+    width: 20%; 
+    float: left;
+    margin-left: 10%;
+    overflow: hidden;
+}
+
+.picto1-img {
+
+}
+
+.picto1-txt {
+    color: white;
+    text-align: justify;
+    font-family: Exo;
+    font-size: 12px;
+}
+
+.picto2 {
+    height: auto; 
+    width: 20%; 
+    float: left;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.picto2-img {
+
+}
+
+.picto2-txt {
+    color: white;
+    text-align: justify;
+    font-family: Exo;
+    font-size: 12px;
+}
+
+.picto3 {
+    height: auto; 
+    width: 20%; 
+    margin-right: 10%;  
+    overflow: hidden;
+}
+
+.picto3-img {
+
+}
+
+.picto3-txt {
+    color: white;
+    text-align: justify;
+    font-family: Exo;
+    font-size: 12px;
+}
+
+.bloc3 {
+    height: auto; 
+    width: 100%; 
+    overflow: hidden;
+    margin-top: 100px;
+    float: left;
+}
+
+.produit-img {
+    float: left;
+    margin-left: 20%;
+}
+
+.btn-order {
+    margin-right: 20%;
+    width: 200px;
+    float: left;
 }
 
 #section3{ 
