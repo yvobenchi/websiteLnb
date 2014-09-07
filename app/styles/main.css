@@ -295,6 +295,8 @@ body{
 
 .name{
     margin-bottom: 10px;
+    color: rgb(8,26,71);
+
 }
 
 .name h2{
@@ -319,6 +321,7 @@ body{
     font-size: 14px;
     text-align: justify;
     font-family: Exo;
+    color: rgb(8,26,71);
 }
 
 #section4 h1{
