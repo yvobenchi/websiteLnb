@@ -17,8 +17,8 @@ body{
     width: 60%;  
     height: 48px; 
     border-radius: 6px;
-    background-image: linear-gradient(#ffffff 0% ,#3f3f3f 100%);
-    box-shadow: 0px 1px 1px #646464;
+    background-image: linear-gradient(#fefefe 0% ,#e6e6e6 100%);
+    box-shadow: 0px 1px 1px #a3a3a3;
     font-size: 14px; 
     position: fixed;
     top: 30px;
@@ -37,12 +37,12 @@ body{
     width: auto;
     height: 100%;
     line-height: 48px;
-    list-style-type: none;
-    transition: all 0.5s ease;
+    list-style-type: none; 
+    transition: all 200ms ease-in;
 }
 
 .navBarUl li:hover{
-    background: #b1b1b1;
+    background-color: rgba(168,168,168,0.5);
 }
 
 .navBarUl li:hover:first-child{
@@ -58,12 +58,13 @@ body{
 .navBarUl li:not(:first-child){
     border-left-style: solid;
     border-left-width: 1px;
-    border-left-color: #c1c1c1 ;
+    border-left-color: rgba(9, 9, 9, 0.125);
 }
 
 .navBarUl li a{
     text-decoration: none;
-    color: inherit;
+    color: #5d5d5d;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
     cursor: default;
     display: block;
     line-height: 48px;
