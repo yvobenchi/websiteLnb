@@ -37,7 +37,7 @@ body{
 
 #section2{ 
     line-height: 30px; 
-    background: #a4a8ab;
+    background: #ffffff;
     font-family: Exo; 
     width: 100%; 
     float: left; 
@@ -45,12 +45,11 @@ body{
 }
 
 #section2 h1{
-    color: white;
+    color: rgb(8,26,71);
     text-align: right;
     padding-right: 96px;
     line-height: 200px;
     font-family: Exo;
-    text-shadow: 0px 2px 2px black;
 }
 
 .bloc1{
@@ -63,7 +62,7 @@ body{
 }
 
 .bloc1-txt {
-    color: white;
+    color: rgb(8,26,71);
     width: 40%;
     text-align: justify;
     font-family: Exo;
@@ -98,7 +97,7 @@ body{
 }
 
 .picto1-txt {
-    color: white;
+    color: rgb(8,26,71);
     text-align: justify;
     font-family: Exo;
     font-size: 12px;
@@ -118,7 +117,7 @@ body{
 }
 
 .picto2-txt {
-    color: white;
+    color: rgb(8,26,71);
     text-align: justify;
     font-family: Exo;
     font-size: 12px;
@@ -136,7 +135,7 @@ body{
 }
 
 .picto3-txt {
-    color: white;
+    color: rgb(8,26,71);
     text-align: justify;
     font-family: Exo;
     font-size: 12px;
@@ -175,7 +174,7 @@ body{
 }
 
 #section3{ 
-    background: #38383a; 
+    background: #ededed; 
     width: 100%; 
     float: left;  
     overflow: hidden;
@@ -183,7 +182,7 @@ body{
 }
 
 #section4{ 
-    background: #999999; 
+    background: url("../images/2048.jpg") no-repeat center center fixed;   
     width: 100%; 
     float: left;  
     overflow: auto;
@@ -215,7 +214,7 @@ body{
 }
 
 .credit p,a{
-    color: #333333;
+    color: rgb(8,26,71);
     font-size: 17px;
     font-family: Exo;
     line-height: 27px;
@@ -276,13 +275,13 @@ body{
     margin: auto;
 }
 .team-content h1{
-    color: white;
+    color: rgb(8,26,71);
     text-align: left;
     padding-left: 96px;
     line-height: 200px;
     font-family: Exo;
-    text-shadow: 0px 2px 2px black;
 }
+
 .team-content .team{
     width: 100%;
 }
@@ -326,13 +325,13 @@ body{
     font-family: Exo;
     line-height: 164px;
     color: rgb(230, 230, 230);
-    text-shadow: 0px 2px 2px black;
 }
+
 .contact-text{
     width: 50%;
     margin: auto;
     margin-top: 50px;
-    color: #222222;
+    color: rgb(8,26,71);
 }
 
 .contact-text p{
@@ -343,12 +342,12 @@ body{
     margin-top: 80px;
     margin-bottom: 50px;
     text-decoration: none;
-    color: #222222;
+    color: rgb(8,26,71);
     line-height: 40px;
 }
 
 .contact-link a{
-    color: #222222;
+    color: rgb(8,26,71);
     font-family: Exo;
     font-size: 20px;
 }
@@ -360,7 +359,7 @@ body{
 }
 
 .contact-link p{
-    color: #222222;
+    color: rgb(8,26,71);
     font-family: Exo;
     font-size: 20px;
     font-style: italic;
