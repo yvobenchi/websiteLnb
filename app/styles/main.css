@@ -36,15 +36,145 @@ body{
 }
 
 #section2{ 
-    line-height: 600px; 
-    background: #a4a8ab; 
+    line-height: 30px; 
+    background: #ffffff;
+    font-family: Exo; 
     width: 100%; 
     float: left; 
     overflow: auto;
 }
 
+#section2 h1{
+    color: rgb(8,26,71);
+    text-align: right;
+    padding-right: 96px;
+    line-height: 200px;
+    font-family: Exo;
+}
+
+.bloc1{
+    height: auto; 
+    width: 80%; 
+    float: left;
+    margin-left: 10%;
+    margin-right: 10%;  
+    overflow: hidden;
+}
+
+.bloc1-txt {
+    color: rgb(8,26,71);
+    width: 40%;
+    text-align: justify;
+    font-family: Exo;
+    font-size: 17px;
+    float: left;  
+}
+
+.bloc1-img {
+    float: left;
+    width: 40%;
+}
+
+.bloc2 {
+    height: auto;
+    margin-top: 100px; 
+    width: 100%; 
+    float: left;  
+    overflow: hidden;
+    min-width: 1000px;
+}
+
+.picto1 {
+    height: auto; 
+    width: 20%; 
+    float: left;
+    margin-left: 10%;
+    overflow: hidden;
+}
+
+.picto1-img {
+
+}
+
+.picto1-txt {
+    color: rgb(8,26,71);
+    text-align: justify;
+    font-family: Exo;
+    font-size: 12px;
+}
+
+.picto2 {
+    height: auto; 
+    width: 20%; 
+    float: left;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.picto2-img {
+
+}
+
+.picto2-txt {
+    color: rgb(8,26,71);
+    text-align: justify;
+    font-family: Exo;
+    font-size: 12px;
+}
+
+.picto3 {
+    height: auto; 
+    width: 20%; 
+    margin-right: 10%;  
+    overflow: hidden;
+}
+
+.picto3-img {
+
+}
+
+.picto3-txt {
+    color: rgb(8,26,71);
+    text-align: justify;
+    font-family: Exo;
+    font-size: 12px;
+}
+
+.bloc3 {
+    height: 200px; 
+    width: 100%; 
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    float: left;
+}
+
+.produit-img {
+    float: left;
+    margin-left: 20%;
+}
+
+.btn-order {
+    margin-right: 20%;
+    width: 200px;
+    float: right;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    background-color: orange;
+    border-radius: 4px;
+    box-shadow: -1px 2px 0px #000;
+}
+
+.btn-order:hover {
+    background-color: black;
+    color: orange;
+    box-shadow: -1px 2px 0px #fff;
+}
+
 #section3{ 
-    background: #38383a; 
+    background: #ededed; 
     width: 100%; 
     float: left;  
     overflow: hidden;
@@ -52,7 +182,7 @@ body{
 }
 
 #section4{ 
-    background: #999999; 
+    background: url("../images/2048.jpg") no-repeat center center fixed;   
     width: 100%; 
     float: left;  
     overflow: auto;
@@ -84,7 +214,7 @@ body{
 }
 
 .credit p,a{
-    color: #333333;
+    color: rgb(8,26,71);
     font-size: 17px;
     font-family: Exo;
     line-height: 27px;
@@ -145,13 +275,13 @@ body{
     margin: auto;
 }
 .team-content h1{
-    color: white;
+    color: rgb(8,26,71);
     text-align: left;
     padding-left: 96px;
     line-height: 200px;
     font-family: Exo;
-    text-shadow: 0px 2px 2px black;
 }
+
 .team-content .team{
     width: 100%;
 }
@@ -165,6 +295,8 @@ body{
 
 .name{
     margin-bottom: 10px;
+    color: rgb(8,26,71);
+
 }
 
 .name h2{
@@ -189,19 +321,20 @@ body{
     font-size: 14px;
     text-align: justify;
     font-family: Exo;
+    color: rgb(8,26,71);
 }
 
 #section4 h1{
     font-family: Exo;
     line-height: 164px;
     color: rgb(230, 230, 230);
-    text-shadow: 0px 2px 2px black;
 }
+
 .contact-text{
     width: 50%;
     margin: auto;
     margin-top: 50px;
-    color: #222222;
+    color: rgb(8,26,71);
 }
 
 .contact-text p{
@@ -212,12 +345,12 @@ body{
     margin-top: 80px;
     margin-bottom: 50px;
     text-decoration: none;
-    color: #222222;
+    color: rgb(8,26,71);
     line-height: 40px;
 }
 
 .contact-link a{
-    color: #222222;
+    color: rgb(8,26,71);
     font-family: Exo;
     font-size: 20px;
 }
@@ -229,7 +362,7 @@ body{
 }
 
 .contact-link p{
-    color: #222222;
+    color: rgb(8,26,71);
     font-family: Exo;
     font-size: 20px;
     font-style: italic;
