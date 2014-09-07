@@ -143,10 +143,11 @@ body{
 }
 
 .bloc3 {
-    height: auto; 
+    height: 200px; 
     width: 100%; 
     overflow: hidden;
     margin-top: 100px;
+    margin-bottom: 100px;
     float: left;
 }
 
@@ -160,6 +161,17 @@ body{
     width: 200px;
     float: right;
     font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    background-color: orange;
+    border-radius: 4px;
+    box-shadow: -1px 2px 0px #000;
+}
+
+.btn-order:hover {
+    background-color: black;
+    color: orange;
+    box-shadow: -1px 2px 0px #fff;
 }
 
 #section3{ 
