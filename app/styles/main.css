@@ -73,7 +73,7 @@ body{
 }  
             
 #section1{ 
-    background: url("../images/golf-background2.jpg") no-repeat center center fixed;
+    background: url("../images/home-background.png") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     width: 100%; 
@@ -154,7 +154,7 @@ body{
 }
 
 .picto1-img {
-
+    margin-bottom: 20px;
 }
 
 .picto1-txt {
@@ -174,7 +174,7 @@ body{
 }
 
 .picto2-img {
-
+    margin-bottom: 20px;
 }
 
 .picto2-txt {
@@ -192,7 +192,7 @@ body{
 }
 
 .picto3-img {
-
+    margin-bottom: 20px;
 }
 
 .picto3-txt {
@@ -240,10 +240,11 @@ body{
     float: left;  
     overflow: hidden;
     height: 680px;
+    padding-bottom: 30px;
 }
 
 #section4{ 
-    background: url("../images/2048.jpg") no-repeat center center fixed;   
+    background: url("../images/contact-background.png") no-repeat center center fixed;   
     width: 100%; 
     float: left;  
     overflow: auto;
@@ -344,14 +345,16 @@ body{
 #section4 h1{
     font-family: Exo;
     line-height: 164px;
-    color: rgb(230, 230, 230);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px #333333;
 }
 
 .contact-text{
     width: 50%;
     margin: auto;
     margin-top: 50px;
-    color: rgb(8,26,71);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px #333333;
 }
 
 .contact-text p{
@@ -362,24 +365,27 @@ body{
     margin-top: 80px;
     margin-bottom: 50px;
     text-decoration: none;
-    color: rgb(8,26,71);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px #333333;
     line-height: 40px;
 }
 
 .contact-link a{
-    color: rgb(8,26,71);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px #333333;
     font-family: Exo;
     font-size: 20px;
 }
 
 .contact-link a:hover{
-    color: #777777;
+    color: #d1d1d1;
     font-family: Exo;
     font-size: 20px;
 }
 
 .contact-link p{
-    color: rgb(8,26,71);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px #333333;
     font-family: Exo;
     font-size: 20px;
     font-style: italic;
