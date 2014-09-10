@@ -2,15 +2,10 @@
             
 body{
     //overflow: hidden;
-    color:#fff;
     font-size: 24px;
-    font-family: "Myriad Set Pro", Myriad, Helvetica, Arial, sans-serif;;
+    font-family: "Myriad Set Pro", Myriad, Helvetica, Arial, sans-serif;
     text-align: center;
     height: 100%;
-}
-
-.container{
-    
 }
 
 #nav{
@@ -23,6 +18,7 @@ body{
     position: fixed;
     top: 30px;
     margin-left: 20%;
+    z-index: 9999;
 }
           
 .navBarUl{
@@ -97,11 +93,12 @@ body{
 }
 
 #section2{ 
-    line-height: 30px; 
-    background: #ffffff; 
+    height: 100vh;
     width: 100%; 
-    float: left; 
-    overflow: auto;
+    overflow: auto; 
+    background: #ffffff; 
+    float: left;
+    padding-top: 100px; 
 }
 
 #section2 h1{
@@ -111,121 +108,25 @@ body{
     line-height: 200px;
 }
 
-.bloc1{
-    height: auto; 
-    width: 80%; 
-    float: left;
-    margin-left: 10%;
-    margin-right: 10%;  
-    overflow: hidden;
+.product-carousel{
+    height: 70%;
 }
 
-.bloc1-txt {
-    color: rgb(8,26,71);
-    width: 40%;
-    text-align: justify;
-    font-size: 17px;
-    float: left;  
+.content-carousel{
+    margin-top: 50px;
 }
 
-.bloc1-img {
-    float: left;
-    width: 40%;
+.slick-dots li{
+    width: 15% !important;
 }
 
-.bloc2 {
-    height: auto;
-    margin-top: 100px; 
-    width: 100%; 
-    float: left;  
-    overflow: hidden;
-    min-width: 1000px;
-}
-
-.picto1 {
-    height: auto; 
-    width: 20%; 
-    float: left;
-    margin-left: 10%;
-    overflow: hidden;
-}
-
-.picto1-img {
-    margin-bottom: 20px;
-}
-
-.picto1-txt {
-    color: rgb(8,26,71);
-    text-align: justify;
-    font-size: 12px;
-}
-
-.picto2 {
-    height: auto; 
-    width: 20%; 
-    float: left;
-    overflow: hidden;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.picto2-img {
-    margin-bottom: 20px;
-}
-
-.picto2-txt {
-    color: rgb(8,26,71);
-    text-align: justify;
-    font-size: 12px;
-}
-
-.picto3 {
-    height: auto; 
-    width: 20%; 
-    margin-right: 10%;  
-    overflow: hidden;
-}
-
-.picto3-img {
-    margin-bottom: 20px;
-}
-
-.picto3-txt {
-    color: rgb(8,26,71);
-    text-align: justify;
-    font-size: 12px;
-}
-
-.bloc3 {
-    height: 200px; 
-    width: 100%; 
-    overflow: hidden;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    float: left;
-}
-
-.produit-img {
-    float: left;
-    margin-left: 20%;
-}
-
-.btn-order {
-    margin-right: 20%;
-    width: 200px;
-    float: right;
-    font-size: 20px;
-    height: 60px;
-    line-height: 60px;
-    background-color: orange;
-    border-radius: 4px;
-    box-shadow: -1px 2px 0px #000;
-}
-
-.btn-order:hover {
-    background-color: black;
-    color: orange;
-    box-shadow: -1px 2px 0px #fff;
+.slick-dots li i{
+    border-radius: 35%;
+    padding-top: 12px;
+    width: 100px;
+    height: 88px;
+    background: #F0F0F0;
+    border: 3px solid #b1b1b1;
 }
 
 #section3{ 
