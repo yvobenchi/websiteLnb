@@ -4,7 +4,7 @@ body{
     //overflow: hidden;
     color:#fff;
     font-size: 24px;
-    font-family: arial;
+    font-family: "Myriad Set Pro", Myriad, Helvetica, Arial, sans-serif;;
     text-align: center;
     height: 100%;
 }
@@ -18,7 +18,7 @@ body{
     height: 38px; 
     border-radius: 6px;
     background-image: linear-gradient(#fefefe 0% ,#e6e6e6 100%);
-    box-shadow: 0px 1px 1px #a3a3a3;
+    box-shadow: 1px 1px 1px #b1b1b1;
     font-size: 14px; 
     position: fixed;
     top: 30px;
@@ -98,8 +98,7 @@ body{
 
 #section2{ 
     line-height: 30px; 
-    background: #ffffff;
-    font-family: Exo; 
+    background: #ffffff; 
     width: 100%; 
     float: left; 
     overflow: auto;
@@ -110,7 +109,6 @@ body{
     text-align: right;
     padding-right: 96px;
     line-height: 200px;
-    font-family: Exo;
 }
 
 .bloc1{
@@ -126,7 +124,6 @@ body{
     color: rgb(8,26,71);
     width: 40%;
     text-align: justify;
-    font-family: Exo;
     font-size: 17px;
     float: left;  
 }
@@ -160,7 +157,6 @@ body{
 .picto1-txt {
     color: rgb(8,26,71);
     text-align: justify;
-    font-family: Exo;
     font-size: 12px;
 }
 
@@ -180,7 +176,6 @@ body{
 .picto2-txt {
     color: rgb(8,26,71);
     text-align: justify;
-    font-family: Exo;
     font-size: 12px;
 }
 
@@ -198,7 +193,6 @@ body{
 .picto3-txt {
     color: rgb(8,26,71);
     text-align: justify;
-    font-family: Exo;
     font-size: 12px;
 }
 
@@ -278,7 +272,6 @@ body{
 .credit p,a{
     color: rgb(8,26,71);
     font-size: 17px;
-    font-family: Exo;
     line-height: 27px;
     text-decoration: none;
 }
@@ -297,7 +290,6 @@ body{
     text-align: left;
     padding-left: 96px;
     line-height: 200px;
-    font-family: Exo;
 }
 
 .team-content .team{
@@ -319,7 +311,6 @@ body{
 
 .name h2{
     font-size: 17px;
-    font-family: Exo;
 }
 
 .photo{
@@ -338,12 +329,10 @@ body{
 .description p{
     font-size: 14px;
     text-align: justify;
-    font-family: Exo;
     color: rgb(8,26,71);
 }
 
 #section4 h1{
-    font-family: Exo;
     line-height: 164px;
     color: rgb(255, 255, 255);
     text-shadow: 2px 3px #333333;
@@ -358,7 +347,6 @@ body{
 }
 
 .contact-text p{
-    font-family: Exo;
 }
 
 .contact-link {
@@ -373,20 +361,17 @@ body{
 .contact-link a{
     color: rgb(255, 255, 255);
     text-shadow: 2px 3px #333333;
-    font-family: Exo;
     font-size: 20px;
 }
 
 .contact-link a:hover{
     color: #d1d1d1;
-    font-family: Exo;
     font-size: 20px;
 }
 
 .contact-link p{
     color: rgb(255, 255, 255);
     text-shadow: 2px 3px #333333;
-    font-family: Exo;
     font-size: 20px;
     font-style: italic;
 }
