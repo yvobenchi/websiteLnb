@@ -129,6 +129,25 @@ body{
     border: 3px solid #b1b1b1;
 }
 
+.slick-dots .slick-active i{
+    border-radius: 35%;
+    padding-top: 12px;
+    width: 100px;
+    height: 88px;
+    background: #C8C8C8;
+    border: 3px solid #b1b1b1;
+}
+
+.slick-dots li i:hover{
+    border-radius: 35%;
+    padding-top: 12px;
+    width: 100px;
+    height: 88px;
+    background: #C8C8C8;
+    border: 3px solid #b1b1b1;
+}
+
+
 #section3{ 
     background: #ededed; 
     width: 100%; 
