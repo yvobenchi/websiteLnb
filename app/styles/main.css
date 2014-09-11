@@ -123,8 +123,8 @@ body{
 .slick-dots li i{
     border-radius: 35%;
     padding-top: 12px;
-    width: 100px;
-    height: 88px;
+    width: 70px;
+    height: 58px;
     background: #F0F0F0;
     border: 3px solid #b1b1b1;
 }
@@ -132,8 +132,8 @@ body{
 .slick-dots .slick-active i{
     border-radius: 35%;
     padding-top: 12px;
-    width: 100px;
-    height: 88px;
+    width: 70px;
+    height: 58px;
     background: #C8C8C8;
     border: 3px solid #b1b1b1;
 }
@@ -141,8 +141,8 @@ body{
 .slick-dots li i:hover{
     border-radius: 35%;
     padding-top: 12px;
-    width: 100px;
-    height: 88px;
+    width: 70px;
+    height: 58px;
     background: #C8C8C8;
     border: 3px solid #b1b1b1;
 }
