@@ -108,17 +108,10 @@ body{
 }
 
 #section1 .available-soon{
-    background: url("../images/background-available.png") center;
-    color: #fff;
-    width: 15%;
+    height: 10%;
     position: absolute;
-    top:30vh;
-    left: 2px;
-    font-weight: 100;
-    line-height: 50px;
-    font-size: 15px;
-    border-radius: 10px;
-    border: 2px solid #686868;
+    bottom: 3px;
+    right: 0px;
 }
 
 #section2{ 
@@ -208,35 +201,96 @@ body{
     background: #ededed; 
     width: 100%;   
     overflow: hidden;
-    min-height: 100vh;
-    padding-top: 80px; 
+    height: 100vh;
+}
+
+#section3 h1{ 
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#section3 ul{
+    display: table;
+    table-layout: fixed;
+    margin: 0 auto;
+    width: 80%;
+    height: 70%; 
+}
+
+#section3 li{
+    display: table-cell;
+    width: auto;
+    list-style-type: none; 
+}
+
+#section3 li .name{
+    margin-bottom: 10px;
+    color: rgb(8,26,71);
+    font-size: 13px;
+}
+
+#section3 li .photo{
+    position: relative;
+    width: 100%;
+}
+
+#section3 .team .photo img{
+    filter: grayscale(50%);
+    border-radius: 50%;
+    width: 80%;
+}
+
+#section3 .team .photo:hover img{
+    filter: opacity(25%) grayscale(70%);
+}
+
+#section3 .team .photo p{
+    font-size: 12px;
+    position: absolute;
+    opacity:0;
+    width: 60%;
+    top:20%;
+    left: 20%;
+}
+
+#section3 .team .photo:hover p{
+    font-size: 12px;
+    opacity:1;
+    width: 60%;
+    position: absolute;
+    top:20%;
+    left: 20%;
+    color: #fff;
+    text-shadow: 1px 2px 1px #303030 ; 
+}
+
+#section3 .team .photo .fonction{
+    font-size: 18px;
+    text-shadow: 1px 2px 1px #b1b1b1; 
 }
 
 #section4{ 
     background: url("../images/contact-background.png") no-repeat center center fixed;   
-    width: 100%; 
+    width: 100%;
     float: left;  
     overflow: auto;
-    min-width: 1000px;
 }
 
-.footer { 
-    height: auto; 
+#section4 .footer { 
     background: #f1f1f1;
     width: 100%; 
     float: left;  
     overflow: hidden;
 }
 
-.logo {
+#section4 .logo {
     width: 20%;
-    min-width: 50px;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 30px;
 }
 
-.logo img{
+#section4 .logo img{
     width: 50%;
 }
 
@@ -253,69 +307,6 @@ body{
 
 .credit a:hover{
     color: #777777;
-}
-
-.team-content{
-    width: 90%;
-    margin: 0 auto;
-}
-.team-content h1{
-    display: block;
-    margin: 0 auto;
-    line-height: 150px;
-}
-
-.team-content .team{
-    width: 100%;
-}
-
-.team-content .team .profil{
-    margin-left: 4%;
-    float: left;
-    width: 20%;
-    height: 300px;
-}
-
-.name{
-    margin-bottom: 10px;
-    color: rgb(8,26,71);
-}
-
-.name h2{
-    font-size: 17px;
-}
-
-.profil img{
-    border-radius: 50%;
-    border: 3px solid #f1f1f1;
-    margin-bottom: 10px;
-    filter: grayscale(50%);
-}
-
-.photo img{
-    height: 250px;
-}
-
-.photo img:hover{
-    filter: opacity(40%) grayscale(70%);
-}
-
-.photo figure figcaption{
-    opacity:0;
-}
-
-.photo:hover figcaption{
-    opacity:1;
-}
-
-.description{
-
-}
-
-.description p{
-    font-size: 14px;
-    text-align: justify;
-    color: rgb(8,26,71);
 }
 
 #section4 h1{

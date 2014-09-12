@@ -23,6 +23,4 @@ $(document).ready(function(){
 			$(this).append(" <div class='picto-txt'>Share</div> ");
 		}
     });
-	
-	
   });
