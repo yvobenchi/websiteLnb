@@ -18,10 +18,6 @@ $(document).ready(function(){
 			$(this).append(" <i class='fa fa-line-chart fa-2x'></i>");
 			$(this).append(" <div class='picto-txt'>Improve</div> ");
 		}
-		else if(i==2){
-			$(this).append(" <i class='fa fa-eye fa-2x'></i>");
-			$(this).append(" <div class='picto-txt'>Visualize</div> ");
-		}
 		else{
 			$(this).append(" <i class='fa fa-users fa-2x'></i>");
 			$(this).append(" <div class='picto-txt'>Share</div> ");

@@ -13,7 +13,7 @@ body{
     height: 38px; 
     border-radius: 6px;
     background-image: linear-gradient(#fefefe 0% ,#e6e6e6 100%);
-    box-shadow: 1px 1px 1px #b1b1b1;
+    box-shadow: 1px 2px 1px #b1b1b1;
     font-size: 14px; 
     position: fixed;
     top: 30px;
@@ -77,6 +77,21 @@ body{
     overflow: auto;
 }
 
+#section1 .logo-x{
+    height: 60px;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+
+#section1 .logo-berkeley{
+    height: 60px;
+    position: absolute;
+    left: 180px;
+    opacity: 0.9;
+    bottom: 20px;
+}
+
 #section1 h1{
     color: #fff;
     margin-top: 20%;
@@ -90,6 +105,20 @@ body{
     font-size: 20px;
     line-height: 20px;
     text-shadow: 1px 1px #b1b1b1;
+}
+
+#section1 .available-soon{
+    background: url("../images/background-available.png") center;
+    color: #fff;
+    width: 15%;
+    position: absolute;
+    top:30vh;
+    left: 2px;
+    font-weight: 100;
+    line-height: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid #686868;
 }
 
 #section2{ 
@@ -108,8 +137,32 @@ body{
     line-height: 200px;
 }
 
-.product-carousel{
-    height: 70%;
+#section2 .product-carousel{
+    top: -70px;
+    height: 80%;
+}
+
+#section2 .title-product{
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 50px;
+    width: 50%;
+}
+
+#section2 .content-product{
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 40px;
+    width: 50%;
+    opacity: 0.7;
+}
+
+#section2 .img-product{
+    display: block;
+    height: 40%;
+    margin: 0 auto;
 }
 
 .content-carousel{
@@ -126,7 +179,8 @@ body{
     width: 70px;
     height: 58px;
     background: #F0F0F0;
-    border: 3px solid #b1b1b1;
+    border: 1px solid #b1b1b1;
+    box-shadow: 1px 2px 2px #303030; 
 }
 
 .slick-dots .slick-active i{
@@ -135,7 +189,8 @@ body{
     width: 70px;
     height: 58px;
     background: #C8C8C8;
-    border: 3px solid #b1b1b1;
+    border: 1px solid #b1b1b1;
+    box-shadow: 1px 2px 2px #303030; 
 }
 
 .slick-dots li i:hover{
@@ -144,17 +199,17 @@ body{
     width: 70px;
     height: 58px;
     background: #C8C8C8;
-    border: 3px solid #b1b1b1;
+    border: 1px solid #b1b1b1;
+    box-shadow: 1px 2px 2px #303030; 
 }
 
 
 #section3{ 
     background: #ededed; 
-    width: 100%; 
-    float: left;  
+    width: 100%;   
     overflow: hidden;
-    height: 680px;
-    padding-bottom: 30px;
+    min-height: 100vh;
+    padding-top: 80px; 
 }
 
 #section4{ 
@@ -202,14 +257,12 @@ body{
 
 .team-content{
     width: 90%;
-    min-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
 }
 .team-content h1{
-    color: rgb(8,26,71);
-    text-align: left;
-    padding-left: 96px;
-    line-height: 200px;
+    display: block;
+    margin: 0 auto;
+    line-height: 150px;
 }
 
 .team-content .team{
@@ -226,20 +279,33 @@ body{
 .name{
     margin-bottom: 10px;
     color: rgb(8,26,71);
-
 }
 
 .name h2{
     font-size: 17px;
 }
 
-.photo{
+.profil img{
+    border-radius: 50%;
     border: 3px solid #f1f1f1;
     margin-bottom: 10px;
+    filter: grayscale(50%);
 }
 
 .photo img{
     height: 250px;
+}
+
+.photo img:hover{
+    filter: opacity(40%) grayscale(70%);
+}
+
+.photo figure figcaption{
+    opacity:0;
+}
+
+.photo:hover figcaption{
+    opacity:1;
 }
 
 .description{
