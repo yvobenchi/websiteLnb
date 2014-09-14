@@ -92,9 +92,16 @@ body{
     bottom: 20px;
 }
 
-#section1 h1{
+#section1 #content_text{
+    left:50%;
+    margin-left: -161px;
+    opacity: 0;
+    top: 70vh;
+    position: absolute;
+}
+
+#section1 #content_text h1{
     color: #fff;
-    margin-top: 20%;
     font-size: 40px;
     line-height: 70px;
     text-shadow: 1px 1px #b1b1b1;
@@ -120,82 +127,43 @@ body{
     overflow: auto; 
     background: #ffffff; 
     float: left;
-    padding-top: 100px; 
+    padding-top: 120px; 
 }
 
-#section2 h1{
-    color: rgb(8,26,71);
-    text-align: right;
-    padding-right: 96px;
-    line-height: 200px;
-}
-
-#section2 .product-carousel{
-    top: -70px;
-    height: 80%;
-}
-
-#section2 .title-product{
-    display: block;
+#section2 ul{
+    display: table;
+    table-layout: fixed;
+    width: 80%;
+    height: 50%;
     margin: 0 auto;
-    font-size: 30px;
-    line-height: 50px;
-    width: 50%;
 }
 
-#section2 .content-product{
-    display: block;
-    margin: 0 auto;
+#section2 .description-product li{
+    display: table-cell;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#section2 .description-product li .title-product{
     font-size: 20px;
-    line-height: 40px;
+    color: #00c6ff;
+}
+
+#section2 .description-product li .content-product{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #8698a8;
+}
+
+#section2 .description-product li:not(:last-child){
+    border-right: 1px solid #e3e3e3;
+}
+
+
+#section2 .description-product li img{
+    margin-top: 30px;
     width: 50%;
-    opacity: 0.7;
 }
-
-#section2 .img-product{
-    display: block;
-    height: 40%;
-    margin: 0 auto;
-}
-
-.content-carousel{
-    margin-top: 50px;
-}
-
-.slick-dots li{
-    width: 15% !important;
-}
-
-.slick-dots li i{
-    border-radius: 35%;
-    padding-top: 12px;
-    width: 70px;
-    height: 58px;
-    background: #F0F0F0;
-    border: 1px solid #b1b1b1;
-    box-shadow: 1px 2px 2px #303030; 
-}
-
-.slick-dots .slick-active i{
-    border-radius: 35%;
-    padding-top: 12px;
-    width: 70px;
-    height: 58px;
-    background: #C8C8C8;
-    border: 1px solid #b1b1b1;
-    box-shadow: 1px 2px 2px #303030; 
-}
-
-.slick-dots li i:hover{
-    border-radius: 35%;
-    padding-top: 12px;
-    width: 70px;
-    height: 58px;
-    background: #C8C8C8;
-    border: 1px solid #b1b1b1;
-    box-shadow: 1px 2px 2px #303030; 
-}
-
 
 #section3{ 
     background: #ededed; 
