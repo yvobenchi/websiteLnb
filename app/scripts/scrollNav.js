@@ -3,17 +3,14 @@
     $.fn.scroll_navi = function(options) {
         
         var defaults = {
-            speed        : 1000
+            speed: 1000
         };
         
         var settings = $.extend( {}, defaults, options );
         
         return this.each( function() {
-            var win = $( window );
             var elem = $(this);
             var elem_a = "#"+elem.attr("id")+" a";
-            var wh = 30;
-            elem.css("top",wh+"px");
             
             $(elem_a).click(function(event){
 				var link_outerpage = $(this).attr("data-outerpage");
@@ -27,17 +24,6 @@
 					var pos = $(link_add).offset().top;
 					$('html, body').animate({scrollTop: pos}, settings.speed);
 				}
-            });
-            
-            win.scroll(function() {
-                var topvalue = win.scrollTop();
-                if(wh<=topvalue)
-                {
-                    $(elem).css({"position":"fixed","top":"2px"});
-                }
-                else{
-                    $(elem).css({"position":"absolute","top":wh+"px"});
-                }
             });
             
         });
