@@ -30,6 +30,16 @@ body{
     transition: all 200ms ease-in;
 }
 
+.navBarUl li:first-child{
+    width: 150px;
+}
+.navBarUl li img{
+    height: 36px;
+    position: absolute;
+    left:15px;
+    top: 6px;
+}
+
 .navBarUl li:hover:not(:first-child){
     background-color: rgba(168,168,168,0.5);
 }
@@ -56,7 +66,7 @@ body{
     height: 100vh;
     width: 100%; 
     float: left;  
-    overflow: auto;
+    
 }
 
 #section1 .logo-x{
@@ -76,22 +86,25 @@ body{
 
 #section1 #content_text{
     left:50%;
-    margin-left: -161px;
-    opacity: 0;
-    top: 70vh;
+    margin-left: -300px;
+    top: 40vh;
     position: absolute;
 }
 
 #section1 #content_text h1{
     color: #fff;
     font-size: 40px;
+    opacity: 0;
+    font-weight: lighter;
     line-height: 70px;
     text-shadow: 1px 1px #b1b1b1;
 }
 
 #section1 h2{
+    text-align: left;
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: lighter;
     line-height: 20px;
     text-shadow: 1px 1px #b1b1b1;
 }
@@ -104,23 +117,38 @@ body{
 }
 
 #section2{ 
-    height: 100vh;
+    margin-bottom: 20px;
     width: 100%; 
     overflow: auto; 
     background: #ffffff; 
     float: left;
-    padding-top: 120px; 
+    padding-top: 100px; 
 }
 
-#section2 ul{
+#section2 .title-description-product{
+    opacity: 0.6;
+}
+
+#section2 .separator-product{
+    margin-top: 38px;
+    margin-bottom: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    background-color: #787878;
+    width: 60px;
+}
+
+#section2 .description-product{
     display: table;
     table-layout: fixed;
-    width: 80%;
+    width: 100%;
     height: 50%;
     margin: 0 auto;
 }
 
 #section2 .description-product li{
+    padding-top: 15px;
     display: table-cell;
     padding-left: 15px;
     padding-right: 15px;
@@ -141,10 +169,26 @@ body{
     border-right: 1px solid #e3e3e3;
 }
 
-
 #section2 .description-product li img{
     margin-top: 30px;
     width: 50%;
+}
+#section2 .description-product .product1{
+    background-color: #E8E8E8;
+}
+#section2 .description-product .product3{
+    background-color: #E8E8E8;
+}
+
+#section2 .product-advantage{
+    padding-top: 30px;
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#section2 .product-advantage li{
+    display: table-cell;
 }
 
 #section3{ 

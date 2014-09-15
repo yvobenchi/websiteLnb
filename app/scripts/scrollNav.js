@@ -19,7 +19,7 @@
 					console.log("this is outerpage link");	
 				}
 				else{
-                event.preventDefault();
+                    event.preventDefault();
 					var link_add = $(this).attr("href");
 					var pos = $(link_add).offset().top;
 					$('html, body').animate({scrollTop: pos}, settings.speed);
