@@ -33,6 +33,7 @@ body{
 .navBarUl li:first-child{
     width: 150px;
 }
+
 .navBarUl li img{
     height: 36px;
     position: absolute;
@@ -101,6 +102,7 @@ body{
 }
 
 #section1 h2{
+    margin-left: 40px;
     text-align: left;
     color: #fff;
     font-size: 22px;
@@ -116,17 +118,18 @@ body{
     right: 0px;
 }
 
-#section2{ 
-    margin-bottom: 20px;
+#section2{
     width: 100%; 
     overflow: auto; 
-    background: #ffffff; 
+    background: #f2f8ff; 
     float: left;
     padding-top: 100px; 
 }
 
 #section2 .title-description-product{
-    opacity: 0.6;
+    font-size: 30px;
+    opacity: 1;
+    font-weight: 200;
 }
 
 #section2 .separator-product{
@@ -141,17 +144,44 @@ body{
 
 #section2 .description-product{
     display: table;
-    table-layout: fixed;
-    width: 100%;
-    height: 50%;
     margin: 0 auto;
+    table-layout: fixed;
+    list-style-type: none;
+    width: 90%;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
 }
 
-#section2 .description-product li{
-    padding-top: 15px;
+#section2 .description-product .product{
     display: table-cell;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
+}
+
+#section2 .description-product .product .content1{
+    margin-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    border-right: 1px solid #808080 ;
+    height: 80%;
+}
+
+#section2 .description-product .product .content2{
+    margin-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-right: 1px solid #808080 ;
+    height: 80%;
+    width: 80%;
+}
+
+#section2 .description-product .product .content3{
+    margin-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 80%;
+    width: 80%;
 }
 
 #section2 .description-product li .title-product{
@@ -165,19 +195,9 @@ body{
     color: #8698a8;
 }
 
-#section2 .description-product li:not(:last-child){
-    border-right: 1px solid #e3e3e3;
-}
-
 #section2 .description-product li img{
     margin-top: 30px;
     width: 50%;
-}
-#section2 .description-product .product1{
-    background-color: #E8E8E8;
-}
-#section2 .description-product .product3{
-    background-color: #E8E8E8;
 }
 
 #section2 .product-advantage{
