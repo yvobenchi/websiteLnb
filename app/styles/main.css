@@ -119,17 +119,20 @@ body{
 }
 
 #section2{
+    padding-top:100px; 
     width: 100%; 
     overflow: auto; 
-    background: #f2f8ff; 
+    background:#E9E9E9; 
     float: left;
-    padding-top: 100px; 
+    padding-bottom: 40px; 
 }
+
 
 #section2 .title-description-product{
     font-size: 30px;
-    opacity: 1;
+    opacity: 0.8;
     font-weight: 200;
+    text-shadow: 2px 2px #E0E0E0;
 }
 
 #section2 .separator-product{
@@ -147,10 +150,10 @@ body{
     margin: 0 auto;
     table-layout: fixed;
     list-style-type: none;
-    width: 90%;
-    height: 50%;
+    width: 95%;
+    height: 250px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 #section2 .description-product .product{
@@ -159,56 +162,67 @@ body{
 }
 
 #section2 .description-product .product .content1{
-    margin-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-top: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
     width: 80%;
     border-right: 1px solid #808080 ;
     height: 80%;
 }
 
 #section2 .description-product .product .content2{
-    margin-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-top: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
     border-right: 1px solid #808080 ;
     height: 80%;
     width: 80%;
 }
 
 #section2 .description-product .product .content3{
-    margin-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-top: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
     height: 80%;
     width: 80%;
 }
 
-#section2 .description-product li .title-product{
-    font-size: 20px;
-    color: #00c6ff;
+#section2 li .title-product{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #0033CC;
 }
 
-#section2 .description-product li .content-product{
-    margin-top: 20px;
-    font-size: 15px;
+#section2 li .content-product{
+    margin-top: 5px;
+    font-size: 12px;
     color: #8698a8;
 }
 
 #section2 .description-product li img{
-    margin-top: 30px;
-    width: 50%;
+    width: 55%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
 }
 
 #section2 .product-advantage{
     padding-top: 30px;
     display: table;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 
 #section2 .product-advantage li{
     display: table-cell;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#section2 .product-advantage li .picto{
+    height: 60px;
+    font-size: 60px;
+    color: rgba(0,0,0,0.6);
+    padding-bottom: 15px;
 }
 
 #section3{ 
