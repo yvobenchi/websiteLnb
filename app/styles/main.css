@@ -226,75 +226,91 @@ body{
 }
 
 #section3{ 
-    background: #ededed; 
+    background-image: radial-gradient(#E0F0FF, #F1F1F1); 
+    padding-top: 70px;
+    padding-bottom: 40px;
     width: 100%;   
     overflow: hidden;
-    height: 100vh;
 }
 
-#section3 h1{ 
-    margin-top: 80px;
-    margin-bottom: 80px;
+#section3 .title-section3{ 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    opacity: 0.8;
+    font-weight: 200;
+    text-shadow: 2px 2px #E0E0E0;
 }
 
-#section3 ul{
-    display: table;
-    table-layout: fixed;
+#section3 .divider{
     margin: 0 auto;
-    width: 80%;
-    height: 70%; 
+    height: 2px;
+    background-color: #787878;
+    width: 55%;
 }
 
-#section3 li{
+#section3 .team-co-founder{
+    padding-top: 30px;
+    display: table;
+    margin: 0 auto;
+    width: 50%; 
+}
+#section3 .team-member{
+    padding-top: 40px;
+    display: table;
+    margin: 0 auto;
+    width: 70%; 
+}
+
+#section3 ul li{
     display: table-cell;
-    width: auto;
     list-style-type: none; 
 }
 
-#section3 li .name{
+#section3 ul li .name{
     margin-bottom: 10px;
-    color: rgb(8,26,71);
+    color: #003380;
     font-size: 13px;
+    text-shadow: 2px 2px #E0E0E0;
 }
 
-#section3 li .photo{
+#section3 ul li .photo{
     position: relative;
-    width: 100%;
+    margin: 0 auto;
+    width: 170px;
+
 }
 
-#section3 .team .photo img{
-    filter: grayscale(50%);
+#section3 ul .photo img{
+    filter: grayscale(100%);
     border-radius: 50%;
-    width: 80%;
+    width: 190px;
+    height: 190px;
 }
 
-#section3 .team .photo:hover img{
-    filter: opacity(25%) grayscale(70%);
+#section3 ul .photo:hover img{
+    filter: opacity(10%) grayscale(80%);
 }
 
-#section3 .team .photo p{
-    font-size: 12px;
-    position: absolute;
+#section3 ul .photo p{
     opacity:0;
-    width: 60%;
-    top:20%;
-    left: 20%;
-}
-
-#section3 .team .photo:hover p{
-    font-size: 12px;
-    opacity:1;
-    width: 60%;
     position: absolute;
-    top:20%;
-    left: 20%;
-    color: #fff;
-    text-shadow: 1px 2px 1px #303030 ; 
+    margin-top: -165px;
+    width: 160px;
+    margin-left:15px; 
+    font-size: 13px;
+    color: #3668B2;
+    text-shadow: 1px 1px #E0E0E0;
 }
 
-#section3 .team .photo .fonction{
-    font-size: 18px;
-    text-shadow: 1px 2px 1px #b1b1b1; 
+#section3 ul .photo:hover p{
+    opacity:1;
+}
+
+#section3 ul .photo .fonction{
+    font-size: 18px; 
+    color: #505050; 
+    text-shadow: 1px 1px #E0E0E0;
 }
 
 #section4{ 
