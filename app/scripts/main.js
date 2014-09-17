@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#nav").scroll_navi();
+    
 
     // $(window).scroll(function() {
     //     var topvalue = win.scrollTop();
@@ -26,6 +26,7 @@ $(document).ready(function(){
 
 
 $(window).load(function(){
+    $("#nav").scroll_navi();
 	//animation in the title of homePage
 	var div=$("#section1 #content_text h1");  
     div.delay(1000).animate({opacity:'1'},2000);
