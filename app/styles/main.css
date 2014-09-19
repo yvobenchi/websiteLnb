@@ -344,7 +344,7 @@ body{
     overflow:hidden;
 }
 
-input {
+#section4 input{
     width: 80%;
     height: 48px;
     border: 1px solid rgba(255,255,255,.4);
@@ -362,16 +362,16 @@ input {
     margin-bottom:20px;
 }
 
-input[type=submit] {
+#section4 input[type=submit] {
     cursor:pointer;
 }
 
-input.name {
+#section4 input.name {
       background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_name.png) no-repeat scroll 16px 16px; 
       padding-left:45px;
 }
 
-input.email {
+#section4 input.email {
       background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_email.png) no-repeat scroll 16px 20px;
       padding-left:45px;
 }
@@ -392,12 +392,31 @@ input.email {
       color: #fff; 
 }
 
-input:focus, textarea:focus { 
+#section4 input:focus, textarea:focus { 
     background-color: rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
     -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
     box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
     overflow: hidden; 
+}
+
+#section4 .modal-body .button-send-form{
+    background: #ECECEC;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color:#7f7f7f;
+    text-decoration: none;
+    text-shadow:0px 1px 0px #fff;
+    border:1px solid #a7a7a7;
+    width: 135px;
+    font-size: 20px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+    -webkit-transition:box-shadow 0.5s;
+}
+
+#section4 .modal-body .button-send-form:hover{
+    box-shadow:0px -1px 3px #999999;
 }
 
 #section4 .footer { 
