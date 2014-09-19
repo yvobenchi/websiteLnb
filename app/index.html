@@ -14,6 +14,7 @@
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/bootstrap.css">
         <!-- endbuild -->
     </head>
     <body>
@@ -22,7 +23,7 @@
         <![endif]-->
 
 
-        <div class="container">
+        <div class="container-website">
 
             <div id="nav">
 
@@ -174,16 +175,46 @@
                 <h1>CONTACT</h1>
                 <div class="contact-text">
                     <p>
-                        Be informed of our advande. Become early adopter of our tracking technology.
+                        Be informed of our progress. Become early adopter of our tracking technology.
                     </p>
                 </div>
                 <div class="contact-link">
                     <a href="MAILTO:'contact@lnbgolf.com'">contact@lnbgolf.com</a></br>
                     <p>+1 (510) 282-2752</p>
                 </div>
+
+                <!-- Button trigger modal -->
                 <div class="pre-order">
-                    <button class="button-pre-order">Pre-order <i class="fa fa-chevron-right"> </i></button>
+                    <button class="button-pre-order" data-toggle="modal" data-target="#myModal">
+                        Pre-order <i class="fa fa-chevron-right"> </i>
+                    </button>
                 </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only"><i class="fa fa-close"></i></span></button>
+                            <h4 class="modal-title" id="myModalLabel">Keep in touch with our team</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <input name="name" placeholder="Name" class="name" required />
+                                    <input name="emailaddress" placeholder="Email" class="email" type="email" required />
+                                    <textarea rows="4" cols="50" name="subject" placeholder="Comment" class="message"></textarea>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <div class="footer">
                     <div class="logo"> 
                         <img src="images/logo.png">
@@ -223,6 +254,7 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <script src="scripts/scrollNav.js"></script>
+        <script src="scripts/bootstrap.js"></script>
         <!-- endbuild -->
 </body>
 </html>
