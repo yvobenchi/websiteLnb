@@ -1,4 +1,4 @@
-<!doctype html>
+          <!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,11 +10,11 @@
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
         <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="styles/bootstrap.css"> 
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/bootstrap.css">
+        <link rel="stylesheet" href="styles/lnb.css">        
         <!-- endbuild -->
     </head>
     <body>
@@ -49,38 +49,41 @@
             </div>
 
             <div id="section2">
-                
-                <div class="title-description-product">
-                    <p>It's time to change the way you golf</p>
+                <div class="inner">
+                    <h2>
+                        <p>It's time to change the way you golf</p>
+                    </h2>                
+                    <ul class="description-product clearfix">
+                        <li class="product product1">
+                            <div class="content">
+                                <img class="img-product" src="images/find.png">
+                                <h3>Have you ever lost your golf ball? Lorem ispum dorlore</h3>
+                                <p class="content-product">Our team will never let it happen again. This is for you asds.</p>
+                                
+                            </div>
+                        </li>
+                        <li class="product product2">
+                            <div class="content">
+                                <img class="img-product" src="images/improve.png">
+                                <h3>
+                                    Don't waste your time and focus on the game
+                                </h3>
+                                <p class="content-product">Analyze the course and track your performance in real time.</p>
+                            </div>
+                        </li>
+                        <li class="product product3">
+                            <div class="content">
+                                <img class="img-product" src="images/share.png">
+                                <h3>
+                                    Be part of the golf community worldwide
+                                </h3>
+                                <p class="content-product">Share your statistics with friends and next opponents.</p>
+                                
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="separator-product"></div>
-                <ul class="description-product">
-                    <li class="product product1">
-                        <div class="content1">
-                            <img class="img-product" src="images/find.png">
-                            <div class="title-product">Have you ever lost your golf ball?</div>
-                            <div class="content-product">Our team will never let it happen again.</div>
-                            
-                        </div>
-                    </li>
-                    <li class="product product2">
-                        <div class="content2">
-                            <img class="img-product" src="images/improve.png">
-                            <div class="title-product">Don't waste your time and focus on the game</div>
-                            <div class="content-product">Analyze the course and track your performance in real time.</div>
-                        </div>
-                    </li>
-                    <li class="product product3">
-                        <div class="content3">
-                            <img class="img-product" src="images/share.png">
-                            <div class="title-product">Be part of the golf community worldwide</div>
-                            <div class="content-product">Share your statistics with friends and next opponents.</div>
-                            
-                        </div>
-                    </li>
-                </ul>
-                <div class="separator-product"></div>
-                <div class="title-description-product">
+           <!--      <div class="title-description-product">
                     <p>Our tracking technology is thought and designed for you</p>
                 </div>
                 <div class="separator-product"></div>
@@ -106,7 +109,7 @@
                         <div class="title-product">HAVE FUN</div>
                         <div class="content-product">Why do you play golf? To play. Not to look for balls. <br>Changing this will make you happy, and us by the way.</div>
                     </li>
-                </ul>
+                </ul> -->
             </div>
 
 
@@ -151,7 +154,7 @@
                             <h2>Louis Millon</h2>
                         </div>
                         <div class="photo">
-                            <img src="images/profil.jpg">
+                            <!-- <img src="images/profil.jpg"> -->
                             <p>Graduated from Polytechnique in entrepreneurship, UC Berkeley in apply mathematics.</p>
                             <div class="fonction">Business strategy</div>                    
                         </div>
@@ -191,7 +194,7 @@
                 </div>
 
                 <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <!--            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -209,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-
+ -->
 
 
                 <div class="footer">
@@ -245,13 +248,13 @@
         </script>
 
         <!-- build:js scripts/plugins.js -->
-
+        <script src="scripts/scrollNav.js"></script>
+        <script src="scripts/bootstrap.js"></script>
+        <script src="scripts/main.js"></script>  
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <script src="scripts/scrollNav.js"></script>
-        <script src="scripts/bootstrap.js"></script>
+              
         <!-- endbuild -->
 </body>
 </html>

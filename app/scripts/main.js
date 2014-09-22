@@ -27,14 +27,30 @@ $(document).ready(function(){
 
 $(window).load(function(){
     $("#nav").scroll_navi();
-	//animation in the title of homePage
-	var div=$("#section1 #content_text h1");  
-    div.delay(1000).animate({opacity:'1'},2000);
-    // var div2=$("#section1 .punshline"); 
-    // div2.animate({opacity:'1'},2000);
 
-    //annimation in the title of product page
-    
+    var $body = $('body');
+
+    $body.addClass('ready');
+
+    var mainSectionHeight = $('#section1').outerHeight();
+    var navHasChanged = false;
+
+    $(document).scroll(function(){
+
+        var scrollY = $body.scrollTop();
+
+        if (scrollY > mainSectionHeight && !navHasChanged) {
+            $('#nav').addClass('various');
+            navHasChanged = true;
+        }
+
+        if (scrollY < mainSectionHeight && navHasChanged) {
+            $('#nav').removeClass('various');
+            navHasChanged = false;
+        }
+
+
+    });
 
 });
 

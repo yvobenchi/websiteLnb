@@ -357,7 +357,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'useminPrepare',
-        'concurrent:dist',
+        // 'concurrent:dist',
         'autoprefixer',
         'concat',
         'cssmin',
@@ -369,7 +369,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('default', [
-        'newer:jshint',
+        //'newer:jshint',
         'build'
     ]);
 
