@@ -161,10 +161,10 @@ module.exports = function (grunt) {
 
         // Automatically inject Bower components into the HTML file
         bowerInstall: {
-            app: {
-                src: ['<%= config.app %>/index.html'],
-                exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
-            }
+            // app: {
+            //     src: ['<%= config.app %>/index.html'],
+            //     exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
+            // }
         },
 
         // Renames files for browser caching purposes
@@ -280,19 +280,22 @@ module.exports = function (grunt) {
                     cwd: '<%= config.app %>',
                     dest: '<%= config.dist %>',
                     src: [
+                        'images/*.{ico,png,txt}',
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*'
                     ]
-                }, {
-                    expand: true,
-                    dot: true,
-                    cwd: 'bower_components/bootstrap/dist',
-                    src: ['fonts/*.*'],
-                    dest: '<%= config.dist %>'
-                }]
+                }
+                // , {
+                //     expand: true,
+                //     dot: true,
+                //     cwd: 'bower_components/bootstrap/dist',
+                //     src: ['fonts/*.*'],
+                //     dest: '<%= config.dist %>'
+                // }
+                ]
             },
             styles: {
                 expand: true,

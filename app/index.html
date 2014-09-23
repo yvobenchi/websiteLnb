@@ -8,13 +8,15 @@
         <link rel="shortcut icon" href="images/logo-fav.png">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" href="styles/modal.css">
+        <link rel="stylesheet" href="styles/popover.css">
+        <link rel="stylesheet" href="styles/lnb.css">  
         <!-- bower:css -->
         <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
-        <link rel="stylesheet" href="styles/bootstrap.css"> 
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/lnb.css">        
+              
         <!-- endbuild -->
     </head>
     <body>
@@ -38,6 +40,7 @@
 
 
             <div id="section1">
+                <div class="background-image"></div>
                 
                 <div id="content_text">
                     <h2>The first connected golf ball</h2>
@@ -57,121 +60,120 @@
                         <li class="product product1">
                             <div class="content">
                                 <img class="img-product" src="images/find.png">
-                                <h3>Have you ever lost your golf ball? Lorem ispum dorlore</h3>
+                                <span class="qs desciption-product-title">Have you ever lost your golf ball? Lorem ispum dorlore<span class="popover above">Hey bro, cool popover! Hey bro, cool popover! Hey bro, cool popover! Hey bro, cool popover! Hey bro, cool popover! Hey bro, cool popover! Hey bro, cool popover! Hey bro, cool popover!</span></span>
                                 <p class="content-product">Our team will never let it happen again. This is for you asds.</p>
-                                
                             </div>
                         </li>
                         <li class="product product2">
                             <div class="content">
                                 <img class="img-product" src="images/improve.png">
-                                <h3>
-                                    Don't waste your time and focus on the game
-                                </h3>
+                                <span class="qs desciption-product-title">Don't waste your time and focus on the game<span class="popover above">Hey bro, cool popover!</span></span>
                                 <p class="content-product">Analyze the course and track your performance in real time.</p>
                             </div>
                         </li>
                         <li class="product product3">
                             <div class="content">
                                 <img class="img-product" src="images/share.png">
-                                <h3>
-                                    Be part of the golf community worldwide
-                                </h3>
+                                <span class="qs desciption-product-title">Be part of the golf community worldwide<span class="popover above">Hey bro, cool popover!</span></span>
                                 <p class="content-product">Share your statistics with friends and next opponents.</p>
                                 
                             </div>
                         </li>
                     </ul>
+            
+                
+                    <h2 class="value-proposition-title">
+                        <p>Our tracking technology is thought and designed for you</p>
+                    </h2> 
+                        
+                    <ul class="product-advantage">
+                        <li class="product1">
+                            <div class="picto">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <h3 class="title-product">SAVE TIME</h3>
+                            <p class="content-product">Your balls is still hidding in the tall grass? Not anymore. L&amp;B will retrieve your ball right away.</p>
+                        </li>
+                        <li class="product2">
+                            <div class="picto">
+                                <i class="fa fa-usd"></i>
+                            </div>
+                            <h3 class="title-product">SAVE MONEY</h3>
+                            <p class="content-product">Buying golf balls, loosing golf balls... Enough! Don't loose them anymore.</p>
+                        </li>
+                        <li class="product3">
+                            <div class="picto">
+                                <i class="fa fa-smile-o fa-6"> </i>
+                            </div>
+                            <h3 class="title-product">HAVE FUN</h3>
+                            <p class="content-product">Why do you play golf? To play. Not to look for balls. Changing this will make you happy, and us by the way.</p>
+                        </li>
+                    </ul>
                 </div>
-           <!--      <div class="title-description-product">
-                    <p>Our tracking technology is thought and designed for you</p>
-                </div>
-                <div class="separator-product"></div>
-                <ul class="product-advantage">
-                    <li class="product1">
-                        <div class="picto">
-                            <i class="fa fa-clock-o"></i>
-                        </div>
-                        <div class="title-product">SAVE TIME</div>
-                        <div class="content-product">Your balls is still hidding in the tall grass? <br>Not anymore. L&amp;B will retrieve your ball right away.</div>
-                    </li>
-                    <li class="product2">
-                        <div class="picto">
-                            <i class="fa fa-usd"></i>
-                        </div>
-                        <div class="title-product">SAVE MONEY</div>
-                        <div class="content-product">Buying golf balls, loosing golf balls... <br>Enough! Don't loose them anymore.</div>
-                    </li>
-                    <li class="product3">
-                        <div class="picto">
-                            <i class="fa fa-smile-o fa-6"> </i>
-                        </div>
-                        <div class="title-product">HAVE FUN</div>
-                        <div class="content-product">Why do you play golf? To play. Not to look for balls. <br>Changing this will make you happy, and us by the way.</div>
-                    </li>
-                </ul> -->
             </div>
 
 
             <div id="section3">
-                <p class="title-section3">LnB Team</p>
-                <div class="divider"></div>
-                <ul class="team-co-founder">
-                    <li class="profil">
-                        <div class="name">
-                            <h2>Yves Benchimol</h2>
-                        </div>
-                        <div class="photo">
-                            <img src="https://media.licdn.com/media/p/1/000/2b5/368/0a2a2fe.jpg">
-                            <p>Graduated from Polytechnique in apply mathematics, UC Berkeley in computer science and entrepreneurship, Yves has a strong expertise in startups especcialy in the Sillicon Valley. </p>
-                            <div class="fonction">CEO<br>Co-founder</div>
-                        </div>
-                    </li>
-                    <li class="profil">
-                        <div class="name">
-                            <h2>Jonathan Grandperrin</h2>
-                        </div>
-                        <div class="photo">
-                            <img src="images/profil-jo.jpg">
-                            <p>Graduated from Polytechnique in electrical engineering, UC Berkeley and with a strong expertise in startups. It's not his firt time as a CTO.</p>
-                            <div class="fonction">CTO<br>Co-founder</div>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="team-member">
-                    <li class="profil">
-                        <div class="name">
-                            <h2>Alexis Negrerie</h2>
-                        </div>
-                        <div class="photo">                            
-                            <img src="images/profil-alexis.jpg">
-                            <p>Graduated from Polytechnique in managment of innovation, UC Berkeley and with a strong expertise in connected objects.</p>
-                            <div class="fonction">COO</div>                            
-                        </div>
-                    </li>
-                    <li class="profil">
-                        <div class="name">
-                            <h2>Louis Millon</h2>
-                        </div>
-                        <div class="photo">
-                            <!-- <img src="images/profil.jpg"> -->
-                            <p>Graduated from Polytechnique in entrepreneurship, UC Berkeley in apply mathematics.</p>
-                            <div class="fonction">Business strategy</div>                    
-                        </div>
-                    </li>
-                    <li class="profil">
-                        <div class="name">
-                            <h2>Hugo Dayan</h2>
-                        </div>
-                        <div class="photo">
-                            <img src="https://media.licdn.com/mpr/mpr/wc_200_200/p/1/005/01c/0d8/1e12539.jpg">
-                            <p>Graduated from AMOS Sport Business School, interned with the Brooklyn Nets, IMG and RMC Sport, and with a specialization in Marketing and Sponsorship.</p>
-                            <div class="fonction">VP of Marketing and Sales</div>                    
-                        </div>
-                    </li>
-                </ul>
-<!--                 <p>Advisors</p>
-                <div class="divider"></div> -->
+                <div class="inner">
+                    <p class="title-section3">LnB Team</p>
+                    <div class="divider"></div>
+                    <ul class="team-co-founder">
+                        <li class="profil">
+                            <div class="name">
+                                <h2>Yves Benchimol</h2>
+                            </div>
+                            <div class="photo">
+                                <img src="https://media.licdn.com/media/p/1/000/2b5/368/0a2a2fe.jpg">
+                                <p>Graduated from Polytechnique in apply mathematics, UC Berkeley in computer science and entrepreneurship, Yves has a strong expertise in startups especcialy in the Sillicon Valley. </p>
+                                <div class="fonction">CEO<br>Co-founder</div>
+                            </div>
+                        </li>
+                        <li class="profil">
+                            <div class="name">
+                                <h2>Jonathan Grandperrin</h2>
+                            </div>
+                            <div class="photo">
+                                <img src="images/profil-jo.jpg">
+                                <p>Graduated from Polytechnique in electrical engineering, UC Berkeley and with a strong expertise in startups. It's not his firt time as a CTO.</p>
+                                <div class="fonction">CTO<br>Co-founder</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="team-member">
+                        <li class="profil">
+                            <div class="name">
+                                <h2>Alexis Negrerie</h2>
+                            </div>
+                            <div class="photo">                            
+                                <img src="images/profil-alexis.jpg">
+                                <p>Graduated from Polytechnique in managment of innovation, UC Berkeley and with a strong expertise in connected objects.</p>
+                                <div class="fonction">COO</div>                            
+                            </div>
+                        </li>
+                        <li class="profil">
+                            <div class="name">
+                                <h2>Louis Millon</h2>
+                            </div>
+                            <div class="photo">
+                                <img src="images/profil-alexis.jpg">
+                                <p>Graduated from Polytechnique in entrepreneurship, UC Berkeley in apply mathematics.</p>
+                                <div class="fonction">Business strategy</div>                    
+                            </div>
+                        </li>
+                        <li class="profil">
+                            <div class="name">
+                                <h2>Hugo Dayan</h2>
+                            </div>
+                            <div class="photo">
+                                <img src="https://media.licdn.com/mpr/mpr/wc_200_200/p/1/005/01c/0d8/1e12539.jpg">
+                                <p>Graduated from AMOS Sport Business School, interned with the Brooklyn Nets, IMG and RMC Sport, and with a specialization in Marketing and Sponsorship.</p>
+                                <div class="fonction">VP of Marketing and Sales</div>                    
+                            </div>
+                        </li>
+                    </ul>
+    <!--                 <p>Advisors</p>
+                    <div class="divider"></div> -->
+                </div>
             </div>
 
             <div id="section4">
@@ -194,12 +196,12 @@
                 </div>
 
                 <!-- Modal -->
-     <!--            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only"><i class="fa fa-close"></i></span></button>
-                            <h4 class="modal-title" id="myModalLabel">Keep in touch with our team</h4>
+                                <h4 class="modal-title" id="myModalLabel">Keep in touch with our team</h4>
                             </div>
                             <div class="modal-body">
                                 <form>
@@ -212,7 +214,7 @@
                         </div>
                     </div>
                 </div>
- -->
+
 
 
                 <div class="footer">
@@ -249,8 +251,10 @@
 
         <!-- build:js scripts/plugins.js -->
         <script src="scripts/scrollNav.js"></script>
-        <script src="scripts/bootstrap.js"></script>
-        <script src="scripts/main.js"></script>  
+        <script src="scripts/main.js"></script> 
+        <script src="scripts/tooltip.js"></script> 
+        <script src="scripts/modal.js"></script>
+        <script src="scripts/popover.js"></script>  
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->

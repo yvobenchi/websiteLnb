@@ -73,7 +73,17 @@ body{
 }  
             
 #section1{ 
-    background: url("../images/home-background.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%; 
+}
+
+#section1 .background-image{
+    position: absolute;
+    height: 0;
+    left: 0;
+    background: url("../images/home-background4.jpg") no-repeat center center fixed;
+    filter: blur(1.5px) grayscale(10%);
     background-size: cover;
     height: 100vh;
     width: 100%; 
@@ -135,8 +145,10 @@ body{
 }
 
 #section2 {
-	padding: 50px 0px;
+	padding-top: 50px;
+    padding-bottom: 50px;
 	background: #f8f8f8;	
+    overflow: auto;
 }
 
 #section2 h2 {
@@ -146,12 +158,14 @@ body{
 }
 
 #section2 ul {
+    display: table;
 	width: 100%;
 	margin: 0px 0px ;
-	padding: 0px;
+	
 }
 
 #section2 ul li {
+    display: table-cell;
 	float: left;
 	width: 33.3%;
 	font-size: 15px;
@@ -166,9 +180,11 @@ body{
 	width: 100%;
 	border-radius: 3px
 }
-#section2 ul li h3 {
+#section2 ul li div span.desciption-product-title {
 	font-weight: 500;
-	margin: 10px 20px 20px 20px;
+    color: #0033CC;
+	
+    margin-bottom: 10px;
 }
 
 #section2 ul li p {
@@ -176,6 +192,16 @@ body{
 	font-weight: 300;
 	margin: 0px 20px;
 }
+
+#section2 .value-proposition-title{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#section2 ul li .picto i{
+    font-size: 58px;
+}
+
 
 #section3{ 
     background-image: radial-gradient(#E0F0FF, #F1F1F1); 
@@ -201,12 +227,16 @@ body{
     width: 55%;
 }
 
+#section3 ul{
+    display: table;
+}
 #section3 .team-co-founder{
     padding-top: 30px;
     display: table;
     margin: 0 auto;
     width: 50%; 
 }
+
 #section3 .team-member{
     padding-top: 40px;
     display: table;
@@ -230,7 +260,6 @@ body{
     position: relative;
     margin: 0 auto;
     width: 170px;
-
 }
 
 #section3 ul .photo img{
@@ -441,6 +470,15 @@ body{
     box-shadow:0px -1px 3px #999999;
 }
 
+#section4 .modal-header button.close{
+    position: absolute;
+    right: 10px;
+    vertical-align: center;
+}
+
+#section4 .modal-header h4{
+    font-weight: lighter;
+}
 .contact-text{
     width: 50%;
     margin: auto;
@@ -478,9 +516,138 @@ body{
 
 @media (max-width: 480px) {
 
-    #section1 #content_text h1{
-        font-size: 20px;
-        color:red;
+    .inner{
+        width: 350px;
     }
+
+    #nav a{
+        font-size: 12px;
+    }
+
+    #section1 #content_text{
+        left:50%;
+        margin-left: -150px;
+    }
+
+    #section1 #content_text h1{
+        font-size: 21px;
+    }
+
+    #section1 #content_text h2{
+        font-size: 14px;
+    }
+
+    #section1 .logo-x{
+        height: 30px;
+    }
+
+    #section1 .logo-berkeley{
+        height: 30px;
+        left: 100px;
+    }
+
+    #section2 h2{
+        font-size: 16px;
+    }
+
+    #section2 ul li img{
+        width: 60%;            
+    }
+
+    #section2 ul{
+        text-align: center;
+
+    }
+    
+    #section2 ul li {
+        margin-left: 35px;
+        display: table-column;
+        font-size: 12px;
+        width: 80%; 
+        padding-bottom: 25px;
+    }
+
+    #section2 ul li .picto i{
+        font-size: 38px;
+    }
+
+    #section3 ul li{
+        display: table;
+    }
+
+    #section3 .team-member{
+        width: 50%;
+    }
+
+    #section3 ul li .photo img{
+        margin-top: 100px;
+    }
+
+    #section3 ul .photo img{
+        width: 120px;
+        height: 120px;
+    }
+
+    #section3 ul li .name{
+        font-size: 10px;    
+    }
+
+    #section3 ul .photo p{
+        font-size: 10px;
+    }
+
+    #section3 ul li .photo .fonction{
+        font-size: 12px;
+        padding-bottom: 15px;
+    }
+
+    #section3 ul .photo p{
+        opacity:1;
+        font-size: 10px;
+        margin-top: -215px;
+        color: #3668B2;
+        text-shadow: 1px 1px #E0E0E0;
+    }
+
+    #section4 h1{
+        line-height: 124px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 2px #333333;
+        font-size: 25px;
+    }
+
+    #section4 p{
+        font-size: 17px;
+    }
+
+    #section4 a{
+        font-size: 15px;
+    }
+
+    #section4 .pre-order .button-pre-order{      
+        right: 10px;
+        margin-top: -40px; 
+        font-weight: lighter;
+        padding: 5px 10px;
+        border:1px solid #a7a7a7;
+        width: 95px;
+        font-size: 10px;
+    }
+
+    #section4 .pre-order .button-pre-order i{
+        float: right;
+        margin-left: 3px;
+        margin-top: 2px;
+    }
+
+    #section4 .modal{
+        width: 300px;
+        margin-left: -150px;
+    }
+
+    #section3 ul .photo:hover img{
+        filter: opacity(100%) grayscale(100%);
+    }   
+    
     
 }
