@@ -34,12 +34,13 @@ $(window).load(function(){
 
     var mainSectionHeight = $('#section1').outerHeight();
     var navHasChanged = false;
+    var animationHasChanged = false;
 
     $(document).scroll(function(){
 
         var scrollY = $body.scrollTop();
 
-        if (scrollY > mainSectionHeight && !navHasChanged) {
+        if (scrollY > mainSectionHeight-1 && !navHasChanged) {
             $('#nav').addClass('various');
             navHasChanged = true;
         }
@@ -49,6 +50,15 @@ $(window).load(function(){
             navHasChanged = false;
         }
 
+        if(scrollY > mainSectionHeight/2 && !animationHasChanged) {
+            $('.description-product .product1').addClass('various1');
+            $(".description-product .product2").delay(400).queue(function(){
+                $(this).addClass("various1");
+            });
+            $(".description-product .product3").delay(800).queue(function(){
+                $(this).addClass("various1");
+            });
+        }
 
     });
 
