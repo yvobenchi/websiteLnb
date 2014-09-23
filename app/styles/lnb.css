@@ -82,8 +82,7 @@ body{
     position: absolute;
     height: 0;
     left: 0;
-    background: url("../images/home-background4.jpg") no-repeat center center fixed;
-    filter: blur(1.5px) grayscale(10%);
+    background: url("../images/home-background.png") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     width: 100%; 
@@ -161,10 +160,10 @@ body{
     display: table;
 	width: 100%;
 	margin: 0px 0px ;
-	
+    padding-top: 40px;	
 }
 
-#section2 ul li {
+#section2 ul.description-product li.product{
     display: table-cell;
 	float: left;
 	width: 33.3%;
@@ -176,27 +175,44 @@ body{
 	margin: 10px 20px;
 }
 
-#section2 ul li img {
-	width: 100%;
+#section2 ul li img:not(:last-child) {
+	height: 180px;
 	border-radius: 3px
 }
-#section2 ul li div span.desciption-product-title {
-	font-weight: 500;
-    color: #0033CC;
-	
-    margin-bottom: 10px;
+#section2 ul li img.product-ball {
+    height: 120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px
 }
 
-#section2 ul li p {
+#section2 ul li div span.desciption-product-title {
+	font-weight: 400;
+    display: block;
+    font-size: 19px;
+}
+
+#section2 .description-product .product  ul{
+    padding-top: 20px;
+}
+
+#section2 .description-product .product  .content .specification li{
+    display: block;
+    margin-bottom: 8px;
 	color: #454545;
 	font-weight: 300;
-	margin: 0px 20px;
 }
 
 #section2 .value-proposition-title{
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
+#section2 .product-advantage li{
+    display: table-cell;
+}
+
+
 
 #section2 ul li .picto i{
     font-size: 58px;
