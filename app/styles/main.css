@@ -631,12 +631,16 @@ body{
 
     }
     
-    #section2 ul li {
+    #section2 ul.description-product li.product {
         margin-left: 35px;
         display: table-column;
         font-size: 12px;
         width: 80%; 
         padding-bottom: 25px;
+    }
+
+    #section2 ul.product-advantage li{
+        display: table-row;
     }
 
     #section2 ul li .picto i{
@@ -676,7 +680,7 @@ body{
     #section3 ul .photo p{
         opacity:1;
         font-size: 10px;
-        margin-top: -215px;
+        margin-top: -230px;
         color: #3668B2;
         text-shadow: 1px 1px #E0E0E0;
     }
