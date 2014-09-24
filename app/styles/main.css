@@ -325,7 +325,7 @@ body{
     height: 190px;
 }
 
-#section3 ul .photo:hover img{
+#section3 .inner ul .photo:hover img{
     filter: opacity(10%) grayscale(80%);
 }
 
@@ -586,7 +586,7 @@ body{
     font-style: italic;
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-device-width: 480px) {
 
     .inner{
         width: 350px;
