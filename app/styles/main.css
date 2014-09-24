@@ -82,7 +82,7 @@ body{
     position: absolute;
     height: 0;
     left: 0;
-    background: url("../images/home-background.png") no-repeat center center fixed;
+    background: url("../images/home-background.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     width: 100%; 
@@ -253,9 +253,8 @@ body{
     font-size: 15px;
 }
 
-#section2 ul li .picto i{
-    font-size: 48px;
-    font-weight: 350px;
+#section2 ul li .picto img{
+    width: 60px;
 }
 
 
@@ -318,15 +317,17 @@ body{
     width: 170px;
 }
 
-#section3 ul .photo img{
+#section3 .inner ul li.profil .photo img{
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     border-radius: 50%;
     width: 190px;
     height: 190px;
 }
 
-#section3 .inner ul .photo:hover img{
+#section3 .inner ul li.profil .photo:hover img{
     filter: opacity(10%) grayscale(80%);
+    -webkit-filter: opacity(10%) grayscale(80%);
 }
 
 #section3 ul .photo p{
@@ -586,7 +587,7 @@ body{
     font-style: italic;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media (max-width: 480px) {
 
     .inner{
         width: 350px;
@@ -677,7 +678,7 @@ body{
         padding-bottom: 15px;
     }
 
-    #section3 ul .photo p{
+    #section3 ul li.profil .photo p{
         opacity:1;
         font-size: 10px;
         margin-top: -230px;
@@ -721,7 +722,7 @@ body{
         margin-left: -150px;
     }
 
-    #section3 ul .photo:hover img{
+    #section3 ul li .photo:hover img{
         filter: opacity(100%) grayscale(100%);
     }   
     
