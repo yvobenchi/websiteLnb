@@ -588,6 +588,23 @@ body{
     font-style: italic;
 }
 
+@-moz-document url-prefix() {
+    #section3 .inner ul li.profil .photo img{
+        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    }
+
+    #section3 .inner ul li.profil .photo:hover img{
+        
+        opacity: 0.1;
+    }
+
+    #section3 ul .photo p{       
+        margin-top: -185px;
+    }
+
+
+}
+
 @media (max-width: 480px) {
 
     .inner{
