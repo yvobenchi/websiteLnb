@@ -1,29 +1,6 @@
 $(document).ready(function(){
     
-
-    // $(window).scroll(function() {
-    //     var topvalue = win.scrollTop();
-    //     var divProductTitle = $( ".title-description-product" ).offset.top;
-    //     if(topvalue>=divProductTitle)
-    //     {
-    //         divProductTitle.animate({opacity:'1'},2000);
-    //     }
-    // });
-    
 });
-
-// $(document).scroll(function () {
-// var y = $(this).scrollTop();
-// var divProductTitle = $( ".title-description-product" );
-// var offset = divProductTitle.offset().top;
-// if (y > offset/2) {
-//     console.log("hello");
-//     divProductTitle.animate({opacity:'0.9'},2000);
-// }
-// test=1;
-// });
-
-
 
 $(window).load(function(){
     $("#nav").scroll_navi();
@@ -37,9 +14,7 @@ $(window).load(function(){
     var animationHasChanged = false;
 
     $(document).scroll(function(){
-
-        var scrollY = $body.scrollTop();
-
+        var scrollY = $(document).scrollTop();
         if (scrollY > mainSectionHeight-1 && !navHasChanged) {
             $('#nav').addClass('various');
             navHasChanged = true;
@@ -62,6 +37,25 @@ $(window).load(function(){
 
     });
 
+});
+
+
+$('form').submit(function(event){
+    event.preventDefault();
+    var postData = $( this ).serializeArray();
+    $.ajax({
+        url: "http://localhost:8080/information",
+        type: 'POST',
+        data: postData,
+        success: function(){
+            //panel success
+        },
+        error: function(){
+            //panel error
+        }
+    }).done(function() {
+            $('#myModal').modal('toggle');
+        });
 });
 
 
