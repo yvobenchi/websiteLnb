@@ -1,20 +1,27 @@
-<!doctype html>
+          <!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>LnBGolf</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="">
+        <title>L&amp;B Golf</title>
+        <meta name="description" content="Connected golf ball finder and tracker">
+        <meta name="keywords" content="golf, ball, finder, tracker, application, technology">
+        <meta name="author" content="Yves Benchimol">
+        <link rel="shortcut icon" href="images/logo-fav.png">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" href="styles/modal.css">
+        <link rel="stylesheet" href="styles/popover.css">
         <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
         <!-- endbower -->
+
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <!--[if IE]>
+            <link rel="stylesheet" href="styles/mainIE.css">
+        <![endif]-->
+
+         <link rel="stylesheet" href="styles/main.css"> 
+
         <!-- endbuild -->
     </head>
     <body>
@@ -23,13 +30,14 @@
         <![endif]-->
 
 
-        <div class="container">
+        <div class="container-website">
 
             <div id="nav">
 
             <ul class="navBarUl">
+                <li><img src="../images/logo-horizontal6.png"></li>
                 <li><a href="#section1">Home</a></li>
-                <li><a href="#section2">Product</a></li>
+                <li><a href="#section2">Products</a></li>
                 <li><a href="#section3">Team</a></li>
                 <li><a href="#section4">Contact</a></li> 
             </ul>
@@ -37,9 +45,12 @@
 
 
             <div id="section1">
+                <div class="background-image"></div>
+                
                 <div id="content_text">
-                    <h1>L&amp;B Golf Ball</h1>
-                    <h2>Engineered for maximum funness</h2>
+                    <h2>The first high quality connected golf ball.</h2>
+                    <h2>Cutting edge tracking technology embeded!</h2>
+                    <h1>Retrieve your L&amp;B ball easily with your smarthphone</h1>
                 </div>
                 <img class="logo-x" src="images/Logo-polytechnique.png">
                 <img class="logo-berkeley" src="images/bekeley-logo.png">
@@ -47,82 +58,192 @@
             </div>
 
             <div id="section2">
-                <ul class="description-product">
-                    <li class="product1">
-                        <div class="title-product">Have you ever lost your golf ball?</div>
-                        <div class="content-product">Our team will never let it happen again.</div>
-                        <img class="img-product" src="images/golf-waves.png">
-                    </li>
-                    <li class="product2">
-                        <div class="title-product">So, don't waste your time and focus on the game</div>
-                        <div class="content-product">Analyze the course and track your performance in real time on your smartphone.</div>
-                        <img class="img-product" src="images/improve.png">
-                    </li>
-                    <li class="product3">
-                        <div class="title-product">Be part of the golf community worldwide</div>
-                        <div class="content-product">Share your statistics with friends and next opponents</div>
-                        <img class="img-product" src="images/share.png">
-                    </li>
-                </ul>
+                <div class="inner">
+                    
+                    <p class="title-section2">Products</p>
+                    
+                    <div class="divider"></div>  
+
+                    <ul class="description-product clearfix">
+                        <li class="product product1">
+                            <div class="content">
+                                <img class="img-product-iphone" src="images/iphone.png">
+                                <span class="desciption-product-title">Mobile application</span>
+                                <ul class="specification">
+                                    <li>GPS</li>
+                                    <li>+30,000 courses</li>
+                                    <li>Golf ball finder</li>
+                                    <li>Shot tracker</li>
+                                    <li>Statistics updated in real time</li>
+                                    <li>Social network</li>
+                                    <li>Free, no monthly fees</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="product product2">
+                            <div class="content">
+                                <img class="img-product" src="images/bracelet.png">
+                                <span class="desciption-product-title">Wearable</span>
+                                <ul class="specification">
+                                    <li>Display ball distance on a OLED screen</li>
+                                    <li>Include BLE and RF technologies</li>
+                                    <li>+10 hours autonomy</li>
+                                    <li>Can be adabted on all kind of wrists, or can be clipped everywhere</li>
+                                    <li>600ft range</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="product product3">
+                            <div class="content">
+                                <img class="product-ball" src="images/ball.png">
+                                <span class="desciption-product-title">Golf Ball</span>
+                                <ul class="specification">
+                                    <li>Hight quality, multi-layers</li>
+                                    <li>Embeded cutting edge RF technology which doesn't affect your golf</li>
+                                    <li>Submeter accuracy</li>
+                                    <li>+15,000 hours autonomy</li>
+                                </ul>
+                                
+                            </div>
+                        </li>
+                    </ul>
+            
+                    <h2>
+                        <p>Time to play smarter</p>
+                    </h2>  
+                        
+                    <ul class="product-advantage">
+                        <li class="product1">
+                            <div class="picto">
+                                <img src="images/picto-temps.png">
+                            </div>
+                            <h3 class="title-product">Save Time</h3>
+                            <p class="content-product">Your balls is still hidding in the rough? Not anymore. L&amp;B will retrieve your ball right away.</p>
+                        </li>
+                        <li class="product2">
+                            <div class="picto">
+                                <img src="images/picto-doll.png">
+                            </div>
+                            <h3 class="title-product">Save Money</h3>
+                            <p class="content-product">Buying golf balls, loosing golf balls... Enough! Don't loose them anymore.</p>
+                        </li>
+                        <li class="product3">
+                            <div class="picto">
+                                <img src="images/picto-smiley.png">
+                            </div>
+                            <h3 class="title-product">Have Fun</h3>
+                            <p class="content-product">Why do you play golf? To play golf! With L&amp;B, focus on your game and enjoy it.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
+
             <div id="section3">
-                <h1>LnB Crew</h1>
-                <ul class="team">
-                    <li class="profil">
-                        <div class="name">
-                            <h2>Yves Benchimol</h2>
-                        </div>
-                        <div class="photo">
-                            <img src="https://media.licdn.com/media/p/1/000/2b5/368/0a2a2fe.jpg">
-                            <p>Graduated from Polytechnique, UC Berkeley in computer science and entrepreneurship, and with a strong expertise in startups Yves is the CEO of L&amp;B.</p>
-                            <div class="fonction">CEO</div>
-                        </div>
-                    </li>
-                    <li class="profil">
-                        <div class="name">
-                            <h2>Alexis Negrerie</h2>
-                        </div>
-                        <div class="photo">
-                            <img src="http://cdn-elle.ladmedia.fr/var/plain_site/storage/images/societe/news/linkedin-supprime-le-profil-d-une-ingenieure-trop-belle-2566123/40813204-1-fre-FR/LinkedIn-supprime-le-profil-d-une-ingenieure-trop-belle_visuel_article2.jpg">
-                            <p>Graduated from Polytechnique, UC Berkeley and with a strong expertise in startups Alexis is the CEO of L&amp;B.</p>
-                            <div class="fonction">COO</div>
-                        </div>
-                    </li>
-                    <li class="profil">
-                        <div class="name">
-                            <h2>Jonathan Grandperrin</h2>
-                        </div>
-                        <div class="photo">                            
-                            <img src="http://cdn-elle.ladmedia.fr/var/plain_site/storage/images/societe/news/linkedin-supprime-le-profil-d-une-ingenieure-trop-belle-2566123/40813204-1-fre-FR/LinkedIn-supprime-le-profil-d-une-ingenieure-trop-belle_visuel_article2.jpg">
-                            <p>Graduated from Polytechnique, UC Berkeley and with a strong expertise in hadware and connected objects Jonathan is the CTO of L&amp;B.</p>
-                            <div class="fonction">CTO</div>                            
-                        </div>
-                    </li>
-                    <li class="profil">
-                        <div class="name">
-                            <h2>Hugo Dayan</h2>
-                        </div>
-                        <div class="photo">
-                            <img src="https://media.licdn.com/mpr/mpr/wc_200_200/p/1/005/01c/0d8/1e12539.jpg">
-                            <p>Graduated from Polytechnique, UC Berkeley in computer science and entrepreneurship, and with a strong expertise in startups Hugo is the CEO of L&amp;B.</p>
-                            <div class="fonction">Business strategy</div>                    
-                        </div>
-                    </li>
-                </ul>
+                <div class="inner">
+                    <p class="title-section3">L&amp;B Team</p>
+                    <div class="divider"></div>
+                    <ul class="team-co-founder">
+                        <li class="profil">
+                            <div class="name">
+                                <h2>Yves Benchimol</h2>
+                            </div>
+                            <div class="photo">
+                                <img src="images/profil-yves.jpg">
+                                <p>Graduated from Polytechnique in apply mathematics, UC Berkeley in computer science and entrepreneurship, Yves has a strong expertise in startups especcialy in the Silicon Valley. Plays golf since he is able to stand up.</p>
+                                <div class="fonction">CEO<br>Co-founder</div>
+                            </div>
+                        </li>
+                        <li class="profil">
+                            <div class="name">
+                                <h2>Jonathan Grandperrin</h2>
+                            </div>
+                            <div class="photo">
+                                <img src="images/profil-jo.jpg">
+                                <p>Graduated from Polytechnique in electrical engineering, UC Berkeley and with a strong expertise in startups. It's not his firt time as a CTO. Went back to school at 18 after working as a construction worker</p>
+                                <div class="fonction">CTO<br>Co-founder</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="team-member">
+                        <li class="profil">
+                            <div class="name">
+                                <h2>Alexis Negrerie</h2>
+                            </div>
+                            <div class="photo">                            
+                                <img src="images/profil-alexis.jpg">
+                                <p>Graduated from Polytechnique in managment of innovation, UC Berkeley and with a strong expertise in Innovation Strategy at Airbus Group at an international level. Passionate with sports.</p>
+                                <div class="fonction">CIO</div>                            
+                            </div>
+                        </li>
+                        <li class="profil">
+                            <div class="name">
+                                <h2>Louis Millon</h2>
+                            </div>
+                            <div class="photo">
+                                <img src="images/profil-louis.jpg">
+                                <p>Graduated from Polytechnique in entrepreneurship, UC Berkeley in opperational research. Fond of golf and connected object. Has an expertise in suplly chain (Parrot)</p>
+                                <div class="fonction">COO</div>                    
+                            </div>
+                        </li>
+                        <li class="profil">
+                            <div class="name">
+                                <h2>Hugo Dayan</h2>
+                            </div>
+                            <div class="photo">
+                                <img src="images/profil-hugo.jpg">
+                                <p>Graduated from AMOS Sport Business School, interned with the Brooklyn Nets, IMG and RMC Sport, and with a specialization in Marketing and Sponsorship. Very good golf player.</p>
+                                <div class="fonction">VP of Marketing and Sales</div>                    
+                            </div>
+                        </li>
+                    </ul>
+    <!--                 <p>Advisors</p>
+                    <div class="divider"></div> -->
+                </div>
             </div>
 
             <div id="section4">
-                <h1>CONTACT</h1>
+                <p class="title-section4">Contact</p>
+                <div class="divider"></div>
                 <div class="contact-text">
                     <p>
-                        Curabitur iaculis, ipsum eu rhoncus lacinia, risus odio molestie dui, eget dictum nisi dui sit amet nibh. In congue felis nec tincidunt accumsan.
+                        Be informed of our progress. Become early adopter of our tracking technology.
                     </p>
                 </div>
                 <div class="contact-link">
                     <a href="MAILTO:'contact@lnbgolf.com'">contact@lnbgolf.com</a></br>
                     <p>+1 (510) 282-2752</p>
                 </div>
+
+                <!-- Button trigger modal -->
+<!--                 <div class="pre-order">
+                    <button class="button-pre-order" data-toggle="modal" data-target="#myModal">
+                        Pre-order <i class="fa fa-chevron-right"> </i>
+                    </button>
+                </div> -->
+
+                <!-- Modal -->
+<!--                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only"><i class="fa fa-close"></i></span></button>
+                                <h4 class="modal-title" id="myModalLabel">Keep in touch with our team</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <input name="name" placeholder="Name" class="name" required />
+                                    <input name="emailaddress" placeholder="Email" class="email" type="email" required />
+                                    <textarea rows="4" cols="50" name="subject" placeholder="Comment" class="message"></textarea>
+                                    <button type="submit" class="button-send-form">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
                 <div class="footer">
                     <div class="logo"> 
                         <img src="images/logo.png">
@@ -130,8 +251,8 @@
                     <div class="credit">
                         <p>
                             Copyright &copy; 2014 L&amp;B </br>
-                            <a href="http://dreem-devices.com/?page_id=14479"> Mentions Légales </a> </br>
-                            <a href="http://dreem-devices.com/?page_id=15925"> Conditions Générales d'Utilisation </a> 
+                            <!-- <a href="#"> Mentions Légales </a> </br>
+                            <a href="#"> Conditions Générales d'Utilisation </a> --> 
                         </p> 
                     </div>
                 </div>
@@ -156,13 +277,14 @@
         </script>
 
         <!-- build:js scripts/plugins.js -->
-
+        <script src="scripts/scrollNav.js"></script>
+        <script src="scripts/tooltip.js"></script> 
+        <script src="scripts/modal.js"></script>
+        <script src="scripts/popover.js"></script>  
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <script src="scripts/scrollNav.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script src="scripts/main.js"></script>       
         <!-- endbuild -->
 </body>
 </html>
