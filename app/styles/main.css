@@ -823,5 +823,11 @@ body{
         right: 0px;
         bottom: auto;
     }
+
+    #section4 .pre-order .button-pre-order{
+        visibility: hidden;
+    }
+
+
   
 }

@@ -3,6 +3,8 @@ $(document).ready(function(){
 });
 
 $(window).load(function(){
+    Parse.initialize("Zc2Ozfm3pRaKbfSSr2SKepOaBXgj83CFO5VAoIsX", "uU4kPub39Ih1bGG7Zs7E0Q1ElQYfwwAWA6JXrdMk");
+
     $("#nav").scroll_navi();
 
     var $body = $('body');
@@ -42,20 +44,27 @@ $(window).load(function(){
 
 $('form').submit(function(event){
     event.preventDefault();
-    var postData = $( this ).serializeArray();
-    $.ajax({
-        url: "http://localhost:8080/information",
-        type: 'POST',
-        data: postData,
-        success: function(){
-            //panel success
-        },
-        error: function(){
-            //panel error
-        }
-    }).done(function() {
-            $('#myModal').modal('toggle');
-        });
+    var formData = $( this ).serializeArray(); 
+
+    var UserContact = Parse.Object.extend("UserContact");
+    var userContact = new UserContact();
+     
+    userContact.set("name", formData[0].value);
+    userContact.set("email", formData[1].value);
+    userContact.set("comment", formData[2].value);
+     
+    userContact.save(null, {
+      success: function(userContact) {
+        // Execute any logic that should take place after the object is saved.
+        $('#myModal').modal('hide');
+      },
+      error: function(userContact, error) {
+        // Execute any logic that should take place if the save fails.
+        // error is a Parse.Error with an error code and message.
+        alert('Failed to create new object, with error code: ' + error.message);
+      }
+    });
+
 });
 
 
