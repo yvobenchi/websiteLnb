@@ -1,9 +1,15 @@
 $(document).ready(function(){
-    
+
 });
 
 $(window).load(function(){
     Parse.initialize("Zc2Ozfm3pRaKbfSSr2SKepOaBXgj83CFO5VAoIsX", "uU4kPub39Ih1bGG7Zs7E0Q1ElQYfwwAWA6JXrdMk");
+
+    $('.button-pre-order').click(function(){
+        Parse.Analytics.track('click-pre-order', null);
+    });
+
+    
 
     $("#nav").scroll_navi();
 
@@ -57,6 +63,11 @@ $('form').submit(function(event){
       success: function(userContact) {
         // Execute any logic that should take place after the object is saved.
         $('#myModal').modal('hide');
+        $('#alertSubmit').addClass('showAlert');
+        $("#alertSubmit").delay(2000).queue(function(){
+                $(this).removeClass("showAlert");
+        });
+        
       },
       error: function(userContact, error) {
         // Execute any logic that should take place if the save fails.
